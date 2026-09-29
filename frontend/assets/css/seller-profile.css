@@ -1,0 +1,289 @@
+/* ==========================================
+            GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+                RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#f5f6fa;
+    padding:40px;
+
+}
+
+/* ==========================================
+            CONTAINER
+========================================== */
+
+.profile-container{
+
+    max-width:900px;
+    margin:auto;
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+/* ==========================================
+            HEADER
+========================================== */
+
+.profile-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+
+}
+
+.profile-header h1{
+
+    font-size:34px;
+    color:#222;
+
+}
+
+.back-btn{
+
+    text-decoration:none;
+    background:#111;
+    color:#fff;
+    padding:12px 20px;
+    border-radius:10px;
+    transition:.3s;
+    font-weight:600;
+
+}
+
+.back-btn:hover{
+
+    background:#ff7300;
+
+}
+
+/* ==========================================
+                FORM
+========================================== */
+
+.row{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+
+}
+
+.input-box{
+
+    display:flex;
+    flex-direction:column;
+    margin-bottom:22px;
+
+}
+
+.input-box label{
+
+    margin-bottom:8px;
+    font-weight:600;
+    color:#444;
+
+}
+
+.input-box input,
+.input-box textarea{
+
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+
+}
+
+.input-box input:focus,
+.input-box textarea:focus{
+
+    border-color:#ff7300;
+
+}
+
+.input-box input[readonly],
+.input-box textarea[readonly]{
+
+    background:#f7f7f7;
+    cursor:not-allowed;
+
+}
+
+/* ==========================================
+            BUTTON
+========================================== */
+
+.save-btn{
+
+    width:100%;
+    border:none;
+    background:#ff7300;
+    color:#fff;
+    padding:16px;
+    border-radius:12px;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.save-btn:hover{
+
+    background:#e66400;
+
+}
+
+/* ==========================================
+            RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.profile-container{
+
+padding:25px;
+
+}
+
+.profile-header{
+
+flex-direction:column;
+align-items:flex-start;
+gap:20px;
+
+}
+
+.row{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/* ==========================================
+   RESPONSIVE - MOBILE VIEW
+========================================== */
+
+@media (max-width: 768px){
+
+    body{
+        padding:15px;
+    }
+
+    .profile-container{
+        width:100%;
+        padding:25px 20px;
+        border-radius:15px;
+    }
+
+    .profile-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+        margin-bottom:25px;
+    }
+
+    .profile-header h1{
+        font-size:27px;
+    }
+
+    .back-btn{
+        width:100%;
+        text-align:center;
+        padding:11px 18px;
+    }
+
+    .row{
+        grid-template-columns:1fr;
+        gap:0;
+    }
+
+    .input-box{
+        margin-bottom:18px;
+    }
+
+    .input-box label{
+        font-size:14px;
+        margin-bottom:7px;
+    }
+
+    .input-box input,
+    .input-box textarea{
+        width:100%;
+        padding:13px;
+        font-size:14px;
+    }
+
+    .input-box textarea{
+        min-height:100px;
+        resize:vertical;
+    }
+
+    .save-btn{
+        padding:14px;
+        font-size:16px;
+    }
+}
+
+
+/* ==========================================
+   SMALL MOBILE DEVICES
+========================================== */
+
+@media (max-width: 480px){
+
+    body{
+        padding:10px;
+    }
+
+    .profile-container{
+        padding:20px 15px;
+        border-radius:12px;
+    }
+
+    .profile-header h1{
+        font-size:24px;
+    }
+
+    .back-btn{
+        font-size:14px;
+        padding:10px;
+    }
+
+    .input-box{
+        margin-bottom:16px;
+    }
+
+    .input-box input,
+    .input-box textarea{
+        padding:12px;
+        font-size:14px;
+    }
+
+    .save-btn{
+        padding:13px;
+        font-size:15px;
+    }
+}

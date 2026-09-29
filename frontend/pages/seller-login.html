@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>NexCart | Seller Login</title>
+
+<link rel="stylesheet"
+href="../assets/css/style.css">
+
+<link rel="stylesheet"
+href="../assets/css/auth.css">
+<link rel="stylesheet"
+href="../assets/css/navbar.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body class="seller-login-page">
+<!-- ===========================
+        TOP INFO BAR
+============================ -->
+
+
+<div class="top-bar">
+
+    <div class="container top-container">
+
+        <div class="top-left">
+
+            🚚 Free Shipping Above ₹999
+
+        </div>
+
+        <div class="top-right">
+
+            <span>📞 +91 98765 43210</span>
+
+            <span>|</span>
+
+            <span>support@nexcart.com</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- ==========================
+            NAVBAR
+========================== -->
+
+<nav class="navbar">
+
+    <div class="container nav-container">
+
+
+        <!-- Logo -->
+
+        <a href="index.html" class="logo">
+
+            <span>Nex</span>Cart
+
+        </a>
+
+
+
+        <!-- Home Button (hidden only on homepage) -->
+
+        <a href="index.html" class="home-btn">
+
+            <i class="fa-solid fa-house"></i>
+
+            Home
+
+        </a>
+
+
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                placeholder="Search Products...">
+
+        </div>
+
+
+
+
+        <!-- Right Side -->
+
+        <div class="nav-right">
+
+
+            <!-- Wishlist -->
+
+            <a href="#"
+            class="nav-icon"
+            onclick="openWishlist()">
+
+                <i class="fa-regular fa-heart"></i>
+
+            </a>
+
+
+
+            <!-- Cart -->
+
+            <a href="#"
+            class="nav-icon"
+            onclick="openCart()">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+            </a>
+
+
+
+
+            <!-- Login Dropdown -->
+
+            <div class="login-dropdown">
+
+
+                <button id="loginBtn" class="login-btn" type="button">
+
+                    Login
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+
+
+                <div class="dropdown-content">
+
+
+                    <a href="login.html">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        Customer Login
+
+                    </a>
+
+
+
+                    <a href="seller-login.html">
+
+                        <i class="fa-solid fa-store"></i>
+
+                        Seller Login
+
+                    </a>
+
+
+
+                    <a href="admin-login.html">
+
+                        <i class="fa-solid fa-user-shield"></i>
+
+                        Admin Login
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</nav>
+
+
+
+
+
+<!-- ===========================
+            NAVBAR
+============================ -->
+
+
+<!-- HERO -->
+
+<section class="seller-login-hero">
+
+<div class="container">
+
+<div class="seller-login-card">
+
+
+<div class="seller-login-left">
+
+<span>
+
+SELLER PORTAL
+
+</span>
+
+<h1>
+
+Welcome Back 👋
+
+</h1>
+
+<p>
+
+Login to manage products, track orders,
+view earnings and grow your business
+with NexCart.
+
+</p>
+
+<div class="seller-benefits">
+
+<div>
+
+<i class="fa-solid fa-box"></i>
+
+Manage Products
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-chart-line"></i>
+
+Track Sales
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-wallet"></i>
+
+View Earnings
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-truck-fast"></i>
+
+Orders
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="seller-login-right">
+
+<h2>
+
+Seller Login
+
+</h2>
+
+<form id="sellerLoginForm">
+
+
+<div class="input-group">
+
+<label>
+
+Email Address
+
+</label>
+
+<div class="input-icon">
+
+<i class="fa-solid fa-envelope"></i>
+
+<input
+type="email"
+id="email"
+placeholder="Enter your email"
+required>
+
+</div>
+
+</div>
+
+
+
+<div class="input-group">
+
+<label>
+
+Password
+
+</label>
+
+<div class="password-box">
+
+<input
+type="password"
+id="password"
+placeholder="Enter password"
+required>
+
+<i class="fa-regular fa-eye"
+id="toggleSellerLoginPassword"></i>
+
+</div>
+
+</div>
+
+
+
+<div class="remember-row">
+
+<label>
+
+<input
+type="checkbox">
+
+Remember Me
+
+</label>
+
+<a href="#">
+
+Forgot Password?
+
+</a>
+
+</div>
+
+
+
+<button
+type="submit"
+class="seller-btn">
+
+Login to Dashboard
+
+</button>
+
+
+
+<p class="seller-bottom">
+
+New Seller?
+
+<a href="seller-register.html">
+
+Register Here
+
+</a>
+
+</p>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<div id="toast"
+class="toast"></div>
+
+<script src="../assets/js/toast.js"></script>
+<script src="../assets/js/navbar.js"></script>
+
+<script src="../assets/js/sellerLogin.js"></script>
+
+</body>
+
+</html>

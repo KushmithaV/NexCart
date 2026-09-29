@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Seller Dashboard | NexCart</title>
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+          rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet"
+          href="../assets/css/seller-dashboard.css">
+          <link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+
+
+</head>
+
+<body>
+
+
+
+
+<!-- ==========================================
+                SIDEBAR
+========================================== -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <h2>NexCart</h2>
+
+        <span>Seller Panel</span>
+
+    </div>
+
+    <ul class="menu">
+
+        <li class="active">
+
+            <a href="#">
+
+                <i class="ri-dashboard-line"></i>
+
+                Dashboard
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="add-product.html">
+
+                <i class="ri-add-circle-line"></i>
+
+                Add Product
+
+            </a>
+
+        </li>
+
+        <li>
+<a href="my-products.html">
+    <i class="ri-shopping-bag-3-line"></i>
+    My Products
+</a>
+
+        </li>
+
+        <li>
+
+<a href="seller-orders.html">
+    <i class="ri-file-list-3-line"></i>
+    Orders
+</a>
+
+        </li>
+
+        <li>
+
+           <a href="seller-profile.html">
+    <i class="ri-user-line"></i>
+    Profile
+</a>
+
+        </li>
+        <li>
+    <a href="seller-notifications-history.html">
+        <i class="ri-notification-3-line"></i>
+        Notification History
+    </a>
+</li>
+
+        <li>
+
+            <a href="#"
+               id="logoutBtn">
+
+                <i class="ri-logout-circle-r-line"></i>
+
+                Logout
+
+            </a>
+
+        </li>
+
+    </ul>
+
+</aside>
+
+<!-- ==========================================
+            MAIN CONTENT
+========================================== -->
+
+<div class="main-content">
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+        <div>
+
+            <h1>
+
+                Welcome,
+
+                <span id="sellerName">
+
+                    Seller
+
+                </span>
+
+                👋
+
+            </h1>
+
+            <p>
+
+                Manage your store with ease.
+
+            </p>
+
+        </div>
+
+<div class="topbar-right">
+
+    <div class="notification-container">
+
+<i class="fa-solid fa-bell" id="notificationBell"></i>
+<span id="notificationCount"></span>
+        <div id="notificationDropdown" class="notification-dropdown">
+
+            <div class="notification-header">
+
+                <h4>Notifications</h4>
+
+                <button id="markReadBtn">
+                    Mark All as Read
+                </button>
+
+            </div>
+
+            <div id="notificationList"></div>
+
+        </div>
+
+    </div>
+
+
+    
+
+</div>
+
+    </header>
+
+    <!-- DASHBOARD CARDS -->
+
+    <section class="cards">
+
+        <div class="card">
+
+            <div class="icon orange">
+
+                <i class="ri-shopping-bag-line"></i>
+
+            </div>
+
+            <div>
+
+                <h3 id="totalProducts">
+
+                    0
+
+                </h3>
+
+                <p>Total Products</p>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon blue">
+
+                <i class="ri-file-list-2-line"></i>
+
+            </div>
+
+            <div>
+
+            <h3 id="totalOrders">
+    0
+</h3>
+
+<p>Orders</p>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon green">
+
+                <i class="ri-money-dollar-circle-line"></i>
+
+            </div>
+
+            <div>
+
+              <h3 id="totalRevenue">
+    ₹0
+</h3>
+
+<p>Total Revenue</p>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <!-- QUICK ACTIONS -->
+
+    <section class="quick-actions">
+
+        <h2>
+
+            Quick Actions
+
+        </h2>
+
+        <div class="action-grid">
+<a href="add-product.html"
+class="action-card">
+
+<i class="ri-add-circle-fill"></i>
+
+<span>Add Product</span>
+
+</a>
+<a href="my-products.html"
+class="action-card">
+
+<i class="ri-shopping-bag-fill"></i>
+
+<span>My Products</span>
+
+</a>
+
+<a href="seller-orders.html"
+class="action-card">
+
+<i class="ri-file-list-fill"></i>
+
+<span>Orders</span>
+
+</a>
+
+<a href="seller-profile.html"
+class="action-card">
+
+<i class="ri-user-settings-fill"></i>
+
+<span>Edit Profile</span>
+
+</a>
+
+        </div>
+
+    </section>
+
+    <!-- RECENT ACTIVITY -->
+
+<section class="recent">
+
+    <div class="section-title">
+
+        <h2>
+            Recent Activity
+        </h2>
+
+    </div>
+
+
+    <div class="activity-box" id="recentActivity">
+
+        <i class="ri-information-line"></i>
+
+        <p>
+            Loading activity...
+        </p>
+
+    </div>
+
+
+</section>
+
+</div>
+<script src="../assets/js/products.js"></script>
+<script src="../assets/js/seller-dashboard.js"></script>
+
+</body>
+</html>

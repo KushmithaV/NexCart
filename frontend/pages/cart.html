@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>NexCart Cart</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/cart.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+
+
+<link rel="stylesheet" href="../assets/css/navbar.css">
+
+<link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+
+<div class="container top-container">
+
+
+<div class="top-left">
+
+🚚 Free Shipping Above ₹999
+
+</div>
+
+
+<div class="top-right">
+
+<span>📞 +91 98765 43210</span>
+
+<span>|</span>
+
+<span>support@nexcart.com</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+
+<div class="container nav-container">
+
+
+<a href="index.html" class="logo">
+
+<span>Nex</span>Cart
+
+</a>
+
+
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input placeholder="Search Products">
+
+</div>
+
+
+
+<div class="nav-right">
+
+
+<a href="wishlist.html" class="nav-icon">
+
+<i class="fa-regular fa-heart"></i>
+
+</a>
+
+
+
+<a href="cart.html" class="nav-icon">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+</a>
+
+
+
+<div class="login-dropdown">
+
+
+<button id="loginBtn" class="login-btn">
+
+<span id="loginText">
+Login
+</span>
+
+<i class="fa-solid fa-chevron-down"></i>
+
+
+</button>
+
+
+
+<div class="dropdown-content" id="dropdownMenu">
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</nav>
+
+
+
+
+
+<section class="cart-page">
+
+
+
+<!-- EMPTY -->
+
+<div id="emptyCart" class="empty-cart">
+
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+
+<h2>Your Cart is Empty</h2>
+
+
+<p>
+Add products to your cart and start shopping.
+</p>
+
+
+<a href="index.html">
+Continue Shopping
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+<!-- CART -->
+
+<div id="cartLayout" class="cart-layout">
+
+
+
+<div id="cartItems">
+
+
+</div>
+
+
+
+
+
+<div class="cart-summary">
+
+
+<h2>
+Cart Summary
+</h2>
+
+
+
+<div class="summary-row">
+
+<span>
+Subtotal
+</span>
+
+<span id="subtotal">
+₹0
+</span>
+
+
+</div>
+
+
+
+
+<div class="summary-row">
+
+<span>
+Delivery
+</span>
+
+
+<span>
+FREE
+</span>
+
+
+</div>
+
+
+
+
+<hr>
+
+
+
+<div class="summary-total">
+
+<span>
+Total
+</span>
+
+
+<span id="total">
+₹0
+</span>
+
+
+</div>
+
+
+
+
+<button onclick="checkout()">
+
+Proceed To Checkout
+
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<script src="../assets/js/navbar.js"></script>
+
+<script src="../assets/js/cart.js"></script>
+
+
+</body>
+
+</html>

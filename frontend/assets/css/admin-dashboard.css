@@ -1,0 +1,1215 @@
+/* ==========================================
+                GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+                RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    display:flex;
+
+    background:#f5f6fa;
+
+    color:#222;
+
+}
+
+/* ==========================================
+                SIDEBAR
+========================================== */
+
+.sidebar{
+
+    width:260px;
+
+    min-height:100vh;
+
+    background:#111;
+
+    color:#fff;
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    padding:30px 20px;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:45px;
+
+}
+
+.logo i{
+
+    font-size:32px;
+
+    color:#ff7300;
+
+}
+
+.logo h2{
+
+    font-size:28px;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar ul li{
+
+    margin-bottom:12px;
+
+}
+
+.sidebar ul li a{
+
+    text-decoration:none;
+
+    color:#ddd;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.sidebar ul li.active a,
+.sidebar ul li a:hover{
+
+    background:#ff7300;
+
+    color:#fff;
+
+}
+
+.sidebar ul li i{
+
+    width:22px;
+
+    text-align:center;
+
+}
+
+/* ==========================================
+                MAIN
+========================================== */
+
+.main{
+
+    margin-left:260px;
+
+    width:calc(100% - 260px);
+
+    padding:35px;
+
+}
+
+/* ==========================================
+                TOPBAR
+========================================== */
+
+.topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+.topbar h1{
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+            DASHBOARD CARDS
+========================================== */
+
+.dashboard-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    gap:25px;
+
+    margin-bottom:40px;
+
+}
+
+.card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:28px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.card i{
+
+    font-size:34px;
+
+    color:#ff7300;
+
+    margin-bottom:18px;
+
+}
+
+.card h2{
+
+    font-size:36px;
+
+    margin-bottom:10px;
+
+}
+
+.card p{
+
+    color:#777;
+
+    font-weight:500;
+
+}
+
+/* ==========================================
+                TABLE
+========================================== */
+
+.table-container{
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.table-container h2{
+
+    margin-bottom:20px;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+table th{
+
+    background:#111;
+
+    color:#fff;
+
+    padding:16px;
+
+    text-align:left;
+
+}
+
+table td{
+
+    padding:16px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+table tr:hover{
+
+    background:#fafafa;
+
+}
+
+/* ==========================================
+            STATUS COLORS
+========================================== */
+
+.pending{
+
+    color:#ff9800;
+
+    font-weight:600;
+
+}
+
+.approved{
+
+    color:#2e7d32;
+
+    font-weight:600;
+
+}
+
+.rejected{
+
+    color:#d32f2f;
+
+    font-weight:600;
+
+}
+
+.blocked{
+
+    color:#444;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+            RESPONSIVE
+========================================== */
+
+@media(max-width:900px){
+
+.sidebar{
+
+    width:90px;
+
+}
+
+.logo h2{
+
+    display:none;
+
+}
+
+.sidebar ul li a{
+
+    justify-content:center;
+
+}
+
+.sidebar ul li a span{
+
+    display:none;
+
+}
+
+.main{
+
+    margin-left:90px;
+
+    width:calc(100% - 90px);
+
+}
+
+}
+
+
+.card{
+    cursor:pointer;
+}
+/* ==========================================
+            NOTIFICATIONS
+========================================== */
+
+.notification-container{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    cursor:pointer;
+
+}
+
+#notificationBell{
+
+    font-size:26px;
+
+    color:#333;
+
+    transition:.3s;
+
+}
+
+#notificationBell:hover{
+
+    color:#ff7300;
+
+}
+
+#notificationCount{
+
+    position:absolute;
+
+    top:-8px;
+
+    right:-10px;
+
+    background:#ff3b30;
+
+    color:#fff;
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:11px;
+
+    font-weight:600;
+
+}
+
+.notification-dropdown{
+
+    position:absolute;
+
+    top:42px;
+
+    right:0;
+
+    width:340px;
+
+    max-height:420px;
+
+    overflow-y:auto;
+
+    background:#fff;
+
+    border-radius:12px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    display:none;
+
+    z-index:1000;
+
+}
+
+.notification-item{
+
+    padding:15px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.notification-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.notification-item h4{
+
+    font-size:15px;
+
+    color:#222;
+
+    margin-bottom:6px;
+
+}
+
+.notification-item p{
+
+    font-size:13px;
+
+    color:#666;
+
+    line-height:1.5;
+
+}
+
+.notification-item:hover{
+
+    background:#fff7f0;
+
+}
+.notification-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:12px 15px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.notification-header h4{
+
+    font-size:16px;
+
+}
+
+#markReadBtn{
+
+    border:none;
+
+    background:#ff7300;
+
+    color:#fff;
+
+    padding:6px 12px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-size:12px;
+
+}
+
+#markReadBtn:hover{
+
+    background:#e56600;
+
+}
+/* ==========================================
+   RESPONSIVE - TABLET
+========================================== */
+
+
+
+/* ==========================================
+   MOBILE VIEW
+========================================== */
+
+@media (max-width: 600px){
+
+    body{
+        display:block;
+        width:100%;
+        overflow-x:hidden;
+    }
+
+
+    /* ==========================================
+       SIDEBAR / MOBILE NAVBAR
+    ========================================== */
+
+    .sidebar{
+        position:relative;
+        top:0;
+        left:0;
+
+        width:100%;
+        min-height:auto;
+
+        padding:12px 15px;
+
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+
+        z-index:100;
+    }
+
+    .logo{
+        margin:0;
+        display:flex;
+        align-items:center;
+        gap:8px;
+    }
+
+    .logo i{
+        font-size:24px;
+    }
+
+    .logo h2{
+        display:block;
+        font-size:21px;
+        margin:0;
+    }
+
+
+    /* Navigation becomes horizontal */
+
+    .sidebar ul{
+        display:flex;
+        align-items:center;
+        gap:5px;
+
+        margin:0;
+        padding:0;
+    }
+
+    .sidebar ul li{
+        margin:0;
+    }
+
+    .sidebar ul li a{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+        padding:9px;
+
+        border-radius:9px;
+    }
+
+    .sidebar ul li a span{
+        display:none;
+    }
+
+    .sidebar ul li i{
+        width:auto;
+        font-size:16px;
+    }
+
+
+    /* ==========================================
+       MAIN CONTENT
+    ========================================== */
+
+    .main{
+        width:100%;
+        margin:0;
+
+        padding:18px 14px;
+    }
+
+
+    /* ==========================================
+       TOPBAR
+    ========================================== */
+
+    .topbar{
+        width:100%;
+
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+
+        margin-bottom:20px;
+
+        gap:10px;
+    }
+
+    .topbar h1{
+        font-size:24px;
+        line-height:1.2;
+    }
+
+
+    /* ==========================================
+       NOTIFICATION BELL
+    ========================================== */
+
+    .notification-container{
+        flex-shrink:0;
+    }
+
+    #notificationBell{
+        font-size:22px;
+    }
+
+    #notificationCount{
+        width:17px;
+        height:17px;
+
+        top:-6px;
+        right:-7px;
+
+        font-size:9px;
+    }
+
+
+    /* ==========================================
+       NOTIFICATION DROPDOWN
+    ========================================== */
+
+    .notification-dropdown{
+        position:fixed;
+
+        top:65px;
+        left:12px;
+        right:12px;
+
+        width:auto;
+        max-width:none;
+
+        max-height:70vh;
+
+        border-radius:12px;
+    }
+
+    .notification-header{
+        padding:11px 13px;
+    }
+
+    .notification-header h4{
+        font-size:14px;
+    }
+
+    #markReadBtn{
+        padding:6px 9px;
+        font-size:11px;
+    }
+
+    .notification-item{
+        padding:12px;
+    }
+
+    .notification-item h4{
+        font-size:14px;
+    }
+
+    .notification-item p{
+        font-size:12px;
+    }
+
+
+    /* ==========================================
+       DASHBOARD CARDS
+    ========================================== */
+
+    .dashboard-grid{
+        display:grid;
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:12px;
+
+        margin-bottom:22px;
+    }
+
+    .card{
+        padding:16px 14px;
+
+        border-radius:14px;
+
+        box-shadow:0 5px 15px rgba(0,0,0,.07);
+    }
+
+    .card:hover{
+        transform:none;
+    }
+
+    .card i{
+        font-size:24px;
+
+        margin-bottom:10px;
+    }
+
+    .card h2{
+        font-size:25px;
+
+        margin-bottom:5px;
+    }
+
+    .card p{
+        font-size:11px;
+        line-height:1.4;
+    }
+
+
+    /* ==========================================
+       TABLE CONTAINER
+    ========================================== */
+
+    .table-container{
+        width:100%;
+
+        padding:15px;
+
+        border-radius:14px;
+
+        overflow:hidden;
+    }
+
+    .table-container h2{
+        font-size:18px;
+
+        margin-bottom:14px;
+    }
+
+
+    /* ==========================================
+       RESPONSIVE TABLE
+    ========================================== */
+
+    table{
+        display:block;
+
+        width:100%;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+        font-size:12px;
+    }
+
+    table th{
+        padding:11px 10px;
+
+        font-size:12px;
+    }
+
+    table td{
+        padding:11px 10px;
+
+        font-size:12px;
+    }
+
+
+    /* ==========================================
+       STATUS
+    ========================================== */
+
+    .pending,
+    .approved,
+    .rejected,
+    .blocked{
+        font-size:12px;
+    }
+
+}
+
+
+/* ==========================================
+   VERY SMALL PHONES
+========================================== */
+
+@media (max-width: 400px){
+
+    .sidebar{
+        padding:10px 10px;
+    }
+
+    .logo h2{
+        font-size:18px;
+    }
+
+    .logo i{
+        font-size:21px;
+    }
+
+    .sidebar ul{
+        gap:2px;
+    }
+
+    .sidebar ul li a{
+        padding:8px;
+    }
+
+    .sidebar ul li i{
+        font-size:15px;
+    }
+
+    .main{
+        padding:15px 10px;
+    }
+
+    .topbar h1{
+        font-size:21px;
+    }
+
+    .dashboard-grid{
+        gap:9px;
+    }
+
+    .card{
+        padding:14px 11px;
+    }
+
+    .card i{
+        font-size:21px;
+    }
+
+    .card h2{
+        font-size:22px;
+    }
+
+    .card p{
+        font-size:10px;
+    }
+
+    .table-container{
+        padding:12px;
+    }
+
+    .notification-dropdown{
+        left:8px;
+        right:8px;
+    }
+
+}
+/* ==========================================
+   MOBILE TOP NAVBAR
+========================================== */
+@media (max-width:700px){
+
+    /* =========================
+       MOBILE NAVBAR
+    ========================= */
+
+    .sidebar{
+        position:relative;
+        width:100%;
+        min-height:auto;
+
+        padding:10px;
+
+        background:#111;
+
+        overflow:visible;
+    }
+
+    .logo{
+        display:none;
+    }
+
+    .sidebar ul{
+        width:100%;
+
+        display:flex;
+        flex-wrap:wrap;
+
+        justify-content:center;
+        align-items:center;
+
+        gap:6px;
+
+        margin:0;
+        padding:0;
+
+        list-style:none;
+    }
+
+    .sidebar ul li{
+        margin:0;
+        flex:0 0 auto;
+    }
+
+    .sidebar ul li a{
+        display:flex;
+
+        align-items:center;
+        justify-content:center;
+
+        gap:5px;
+
+        padding:7px 9px;
+
+        border-radius:8px;
+
+        color:#ddd;
+
+        white-space:nowrap;
+
+        font-size:11px;
+    }
+
+    .sidebar ul li a span{
+        display:block;
+    }
+
+    .sidebar ul li i{
+        width:auto;
+        font-size:13px;
+    }
+
+    .sidebar ul li.active a{
+        background:#ff7300;
+        color:#fff;
+    }
+
+
+    /* =========================
+       MAIN
+    ========================= */
+
+    .main{
+        width:100%;
+        margin:0;
+        padding:18px 14px 30px;
+    }
+
+
+    /* =========================
+       TOPBAR
+    ========================= */
+
+    .topbar{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+
+        gap:10px;
+
+        margin-bottom:18px;
+    }
+
+    .topbar h1{
+        font-size:23px;
+        margin:0;
+    }
+
+
+    /* =========================
+       CARDS
+    ========================= */
+
+    .dashboard-grid{
+        display:grid;
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:10px;
+
+        margin-bottom:22px;
+    }
+
+    .card{
+        min-height:125px;
+
+        padding:15px 13px;
+
+        border-radius:14px;
+    }
+
+    .card i{
+        font-size:23px;
+        margin-bottom:10px;
+    }
+
+    .card h2{
+        font-size:25px;
+        margin-bottom:5px;
+    }
+
+    .card p{
+        font-size:11px;
+    }
+
+
+    /* =========================
+       TABLE
+    ========================= */
+
+    .table-container{
+        width:100%;
+
+        padding:13px;
+
+        border-radius:14px;
+
+        overflow:hidden;
+    }
+
+    table{
+        display:block;
+
+        width:100%;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+    }
+
+}
+/* ==========================================
+   ADMIN MOBILE MENU
+========================================== */
+
+.menu-toggle {
+    display: none;
+
+    background: none;
+    border: none;
+
+    font-size: 22px;
+    color: #111;
+
+    cursor: pointer;
+
+    padding: 8px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media screen and (max-width: 768px) {
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .topbar {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        padding: 15px;
+    }
+
+    .topbar h1 {
+        font-size: 20px;
+        margin: 0;
+        flex: 1;
+    }
+
+
+    /* SIDEBAR */
+
+    .sidebar {
+        position: fixed;
+
+        top: 0;
+        left: -280px;
+
+        width: 260px;
+        height: 100vh;
+
+        z-index: 1000;
+
+        transition: left 0.3s ease;
+
+        overflow-y: auto;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+
+    /* MAIN */
+
+    .main {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+}
+@media screen and (max-width: 768px) {
+
+    .sidebar.open::after {
+        content: "";
+        position: fixed;
+
+        top: 0;
+        left: 260px;
+
+        width: calc(100vw - 260px);
+        height: 100vh;
+
+        background: rgba(0,0,0,0.35);
+
+        z-index: -1;
+    }
+
+}
+@media screen and (max-width: 768px) {
+
+    .sidebar {
+        position: fixed !important;
+        top: 0 !important;
+        left: -280px !important;
+
+        width: 260px !important;
+        height: 100vh !important;
+
+        z-index: 9999 !important;
+
+        transition: left 0.3s ease !important;
+
+        overflow-y: auto;
+    }
+
+    .sidebar.open {
+        left: 0 !important;
+    }
+
+    .menu-toggle {
+        display: flex !important;
+
+        background: none;
+        border: none;
+
+        font-size: 22px;
+        cursor: pointer;
+
+        padding: 8px;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+}

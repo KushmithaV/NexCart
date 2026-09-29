@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Category Products | NexCart</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/navbar.css">
+
+<link rel="stylesheet" href="../assets/css/categories.css">
+<link rel="stylesheet" href="../assets/css/auth.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+
+
+</head>
+
+<body>
+<!-- ===========================
+        TOP INFO BAR
+============================ -->
+
+<div class="top-bar">
+
+    <div class="container top-container">
+
+        <div class="top-left">
+
+            🚚 Free Shipping Above ₹999
+
+        </div>
+
+        <div class="top-right">
+
+            <span>📞 +91 98765 43210</span>
+
+            <span>|</span>
+
+            <span>support@nexcart.com</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- ===========================
+            NAVBAR
+============================ -->
+
+<nav class="navbar">
+
+
+<div class="container nav-container">
+
+
+<a href="index.html" class="logo">
+
+<span>Nex</span>Cart
+
+</a>
+
+
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input placeholder="Search Products">
+
+</div>
+
+
+
+<div class="nav-right">
+
+
+<a href="wishlist.html" class="nav-icon">
+
+<i class="fa-regular fa-heart"></i>
+
+</a>
+
+
+
+<a href="cart.html" class="nav-icon">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+</a>
+
+
+
+<div class="login-dropdown">
+
+
+<button id="loginBtn" class="login-btn">
+
+<span id="loginText">
+Login
+</span>
+
+<i class="fa-solid fa-chevron-down"></i>
+
+
+</button>
+
+
+
+<div class="dropdown-content" id="dropdownMenu">
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</nav>
+<!-- ==========================================
+                HEADER
+========================================== -->
+
+<header class="page-header">
+
+    <div class="header-content">
+
+        <h1 id="categoryHeroTitle">
+
+            Category
+
+        </h1>
+
+        <p>
+
+            Browse products from trusted sellers.
+
+        </p>
+
+    </div>
+
+</header>
+
+<!-- ==========================================
+            PRODUCTS SECTION
+========================================== -->
+
+<section class="products-section">
+
+    <div class="products-header">
+
+        <div>
+
+            <h2 id="categoryTitle">
+
+                Category
+
+            </h2>
+
+            <p id="productCount">
+
+                0 Products Found
+
+            </p>
+
+        </div>
+
+        <input
+
+            type="text"
+
+            id="searchProduct"
+
+            placeholder="Search Products...">
+
+    </div>
+
+    <div class="product-grid" id="productGrid">
+
+        <!-- Products will load here -->
+
+    </div>
+
+</section>
+<script src="../assets/js/navbar.js"></script>
+
+<script src="../assets/js/categories.js"></script>
+
+<div id="toast"></div>
+
+<script src="../assets/js/toast.js"></script>
+</body>
+
+</html>

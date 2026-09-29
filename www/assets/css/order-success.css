@@ -1,0 +1,592 @@
+/* ==========================================
+   NEXCART SUCCESS PAGE
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #f7f7f7;
+}
+
+
+/* ==========================================
+   SUCCESS HEADER
+========================================== */
+
+.success-header {
+    width: 100%;
+    height: 75px;
+
+    background: #111;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+.logo span {
+    color: #ff7a00;
+}
+
+
+/* ==========================================
+   SUCCESS CONTAINER
+========================================== */
+
+.success-container {
+    width: 100%;
+    min-height: calc(100vh - 75px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   SUCCESS CARD
+========================================== */
+
+.success-card {
+    width: 520px;
+    max-width: 100%;
+
+    box-sizing: border-box;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ==========================================
+   SUCCESS ICON
+========================================== */
+
+.success-icon i {
+    display: block;
+
+    font-size: 75px;
+
+    color: #ff7a00;
+
+    margin-bottom: 20px;
+}
+
+
+/* ==========================================
+   SUCCESS TITLE
+========================================== */
+
+.success-card h1 {
+    font-size: 30px;
+
+    margin-bottom: 12px;
+
+    color: #111;
+}
+
+
+/* ==========================================
+   MESSAGE
+========================================== */
+
+.message {
+    color: #666;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+/* ==========================================
+   ORDER DETAILS
+========================================== */
+
+.order-details {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    background: #fafafa;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    text-align: left;
+}
+
+.detail {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #eee;
+}
+
+.detail:last-child {
+    border-bottom: none;
+}
+
+.detail span {
+    color: #777;
+}
+
+.detail strong {
+    color: #111;
+
+    text-align: right;
+
+    overflow-wrap: anywhere;
+}
+
+.paid {
+    color: green !important;
+}
+
+.pending {
+    color: #f59e0b;
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   DELIVERY BOX
+========================================== */
+
+.delivery-box {
+    display: flex;
+
+    gap: 15px;
+
+    align-items: center;
+
+    margin: 25px 0;
+
+    padding: 18px;
+
+    background: #fff4e8;
+
+    border-radius: 12px;
+
+    text-align: left;
+}
+
+.delivery-box i {
+    flex-shrink: 0;
+
+    font-size: 30px;
+
+    color: #ff7a00;
+}
+
+.delivery-box h3 {
+    margin-bottom: 5px;
+}
+
+.delivery-box p {
+    color: #666;
+
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   ACTIONS
+========================================== */
+
+.actions {
+    width: 100%;
+
+    display: flex;
+
+    gap: 15px;
+}
+
+button {
+    flex: 1;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #ff7a00;
+
+    color: white;
+
+    border: none;
+}
+
+.secondary-btn {
+    background: white;
+
+    border: 2px solid #111;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media screen and (max-width: 768px) {
+
+    .success-header {
+        height: 65px;
+    }
+
+    .logo {
+        font-size: 27px;
+    }
+
+    .success-container {
+        min-height: calc(100vh - 65px);
+
+        padding: 25px 18px;
+
+        align-items: flex-start;
+    }
+
+    .success-card {
+        width: 100%;
+
+        max-width: 520px;
+
+        padding: 30px 25px;
+
+        border-radius: 16px;
+    }
+
+    .success-icon i {
+        font-size: 65px;
+
+        margin-bottom: 15px;
+    }
+
+    .success-card h1 {
+        font-size: 26px;
+    }
+
+    .message {
+        font-size: 14px;
+
+        margin-bottom: 25px;
+    }
+
+    .order-details {
+        padding: 16px;
+    }
+
+    .detail {
+        font-size: 14px;
+    }
+
+    .delivery-box {
+        padding: 15px;
+
+        gap: 12px;
+    }
+
+    .delivery-box i {
+        font-size: 27px;
+    }
+
+    .delivery-box h3 {
+        font-size: 16px;
+    }
+
+    .delivery-box p {
+        font-size: 13px;
+    }
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media screen and (max-width: 600px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+
+        overflow-x: hidden;
+    }
+
+    .success-header {
+        width: 100%;
+
+        height: 60px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+
+    /* SUCCESS CONTAINER */
+
+    .success-container {
+        width: 100%;
+
+        min-height: calc(100vh - 60px);
+
+        padding: 20px 12px 30px;
+
+        box-sizing: border-box;
+
+        align-items: flex-start;
+    }
+
+
+    /* SUCCESS CARD */
+
+    .success-card {
+        width: 100%;
+
+        max-width: none;
+
+        padding: 25px 16px;
+
+        border-radius: 15px;
+
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.09);
+    }
+
+
+    /* ICON */
+
+    .success-icon i {
+        font-size: 55px;
+
+        margin-bottom: 14px;
+    }
+
+
+    /* TITLE */
+
+    .success-card h1 {
+        font-size: 22px;
+
+        line-height: 1.3;
+
+        margin-bottom: 10px;
+    }
+
+
+    /* MESSAGE */
+
+    .message {
+        font-size: 13px;
+
+        line-height: 1.6;
+
+        margin-bottom: 22px;
+    }
+
+
+    /* ORDER DETAILS */
+
+    .order-details {
+        padding: 13px 15px;
+
+        border-radius: 11px;
+    }
+
+    .detail {
+        padding: 10px 0;
+
+        gap: 10px;
+
+        font-size: 13px;
+    }
+
+    .detail span {
+        flex-shrink: 0;
+    }
+
+    .detail strong {
+        max-width: 60%;
+
+        text-align: right;
+
+        word-break: break-word;
+    }
+
+
+    /* DELIVERY */
+
+    .delivery-box {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        margin: 20px 0;
+
+        padding: 13px;
+
+        gap: 11px;
+
+        border-radius: 11px;
+    }
+
+    .delivery-box i {
+        font-size: 25px;
+    }
+
+    .delivery-box h3 {
+        font-size: 15px;
+
+        margin-bottom: 4px;
+    }
+
+    .delivery-box p {
+        font-size: 12px;
+
+        line-height: 1.5;
+    }
+
+
+    /* ACTION BUTTONS */
+
+    .actions {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+
+        flex: none;
+
+        padding: 13px;
+
+        font-size: 14px;
+
+        border-radius: 9px;
+    }
+}
+
+
+/* ==========================================
+   VERY SMALL PHONES
+========================================== */
+
+@media screen and (max-width: 400px) {
+
+    .success-header {
+        height: 56px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .success-container {
+        min-height: calc(100vh - 56px);
+
+        padding: 15px 10px 25px;
+    }
+
+    .success-card {
+        padding: 22px 13px;
+    }
+
+    .success-icon i {
+        font-size: 48px;
+    }
+
+    .success-card h1 {
+        font-size: 20px;
+    }
+
+    .message {
+        font-size: 12px;
+    }
+
+    .order-details {
+        padding: 11px 12px;
+    }
+
+    .detail {
+        font-size: 12px;
+    }
+
+    .delivery-box {
+        padding: 11px;
+    }
+
+    .delivery-box i {
+        font-size: 22px;
+    }
+
+    .delivery-box h3 {
+        font-size: 14px;
+    }
+
+    .delivery-box p {
+        font-size: 11px;
+    }
+
+    button {
+        padding: 12px;
+
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NexCart | Register</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/auth.css">
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+<!-- ===========================
+        TOP INFO BAR
+============================ -->
+
+<div class="top-bar">
+
+    <div class="container top-container">
+
+        <div class="top-left">
+
+            🚚 Free Shipping Above ₹999
+
+        </div>
+
+        <div class="top-right">
+
+            <span>📞 +91 98765 43210</span>
+
+            <span>|</span>
+
+            <span>support@nexcart.com</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- ==========================
+            NAVBAR
+========================== -->
+
+<nav class="navbar">
+
+    <div class="container nav-container">
+
+
+        <!-- Logo -->
+
+        <a href="index.html" class="logo">
+
+            <span>Nex</span>Cart
+
+        </a>
+
+
+
+        <!-- Home Button (hidden only on homepage) -->
+
+        <a href="index.html" class="home-btn">
+
+            <i class="fa-solid fa-house"></i>
+
+            Home
+
+        </a>
+
+
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                placeholder="Search Products...">
+
+        </div>
+
+
+
+
+        <!-- Right Side -->
+
+        <div class="nav-right">
+
+
+            <!-- Wishlist -->
+
+            <a href="#"
+            class="nav-icon"
+            onclick="openWishlist()">
+
+                <i class="fa-regular fa-heart"></i>
+
+            </a>
+
+
+
+            <!-- Cart -->
+
+            <a href="#"
+            class="nav-icon"
+            onclick="openCart()">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+            </a>
+
+
+
+
+            <!-- Login Dropdown -->
+
+            <div class="login-dropdown">
+
+
+                <button id="loginBtn" class="login-btn" type="button">
+
+                    Login
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+
+
+                <div class="dropdown-content">
+
+
+                    <a href="login.html">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        Customer Login
+
+                    </a>
+
+
+
+                    <a href="seller-login.html">
+
+                        <i class="fa-solid fa-store"></i>
+
+                        Seller Login
+
+                    </a>
+
+
+
+                    <a href="admin-login.html">
+
+                        <i class="fa-solid fa-user-shield"></i>
+
+                        Admin Login
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</nav>
+
+<section class="auth-page">
+
+<div class="auth-container">
+
+<!-- LEFT -->
+
+<div class="auth-left">
+
+<span class="welcome">
+
+JOIN NEXCART
+
+</span>
+
+<h1>
+
+Create Your Account
+
+</h1>
+
+<p>
+
+Become a part of NexCart and enjoy secure shopping,
+fast delivery, exclusive offers, and personalized recommendations.
+
+</p>
+
+<img src="../assets/images/register.png"
+     alt="Register">
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="auth-right">
+
+<h2>
+
+Create Account
+
+</h2>
+
+<p class="sub-title">
+
+Fill in your details to get started.
+
+</p>
+
+<form id="registerForm">
+
+<div class="input-group">
+
+<label>Full Name</label>
+
+<input
+type="text"
+id="fullname"
+placeholder="Enter your full name"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Email Address</label>
+
+<input
+type="email"
+id="email"
+placeholder="Enter your email"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Phone Number</label>
+
+<input
+type="tel"
+id="phone"
+placeholder="Enter your phone number"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Password</label>
+
+<div class="password-box">
+
+<input
+type="password"
+id="password"
+placeholder="Create password"
+required>
+
+<i class="fa-regular fa-eye"
+id="togglePassword"></i>
+
+</div>
+
+</div>
+
+<div class="input-group">
+
+<label>Confirm Password</label>
+
+<div class="password-box">
+
+<input
+type="password"
+id="confirmPassword"
+placeholder="Confirm password"
+required>
+
+<i class="fa-regular fa-eye"
+id="toggleConfirmPassword"></i>
+
+</div>
+
+</div>
+
+<div class="remember-row">
+
+<label>
+
+<input
+type="checkbox"
+required>
+
+I agree to the Terms & Conditions
+
+</label>
+
+</div>
+
+<button
+type="submit"
+class="login-btnn">
+
+Create Account
+
+</button>
+
+<p class="bottom-text">
+
+Already have an account?
+
+<a href="login.html">
+
+Login
+
+</a>
+
+</p>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Toast Notification -->
+
+<div id="toast" class="toast">
+
+    <i id="toastIcon" class="fa-solid fa-circle-check"></i>
+
+    <span id="toastMessage">
+        Success
+    </span>
+
+</div>
+<script src="../assets/js/navbar.js"></script>
+<script src="../assets/js/auth.js"></script>
+
+</body>
+
+</html>

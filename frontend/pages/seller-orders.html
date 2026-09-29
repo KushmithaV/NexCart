@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Seller Orders | NexCart</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="../assets/css/navbar.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/auth.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+<link rel="stylesheet" href="../assets/css/seller-orders.css">
+
+</head>
+
+<body>
+
+
+<!-- ==========================
+        PAGE HEADER
+========================== -->
+
+<header class="page-header">
+
+    <div class="header-left">
+
+        <h1>
+            Seller Orders
+        </h1>
+
+        <p>
+            View and manage all customer orders received for your products.
+        </p>
+
+    </div>
+
+    <a href="seller-dashboard.html" class="back-btn">
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+        Dashboard
+
+    </a>
+
+</header>
+
+
+
+<!-- ==========================
+        SEARCH & FILTER
+========================== -->
+
+<section class="orders-toolbar">
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+        type="text"
+        id="searchOrder"
+        placeholder="Search Order ID, Customer or Product">
+
+    </div>
+
+
+    <select id="statusFilter">
+
+        <option value="">All Orders</option>
+
+        <option value="Placed">Placed</option>
+
+        <option value="Confirmed">Confirmed</option>
+        
+        <option value="Shipped">Shipped</option>
+        
+        <option value="Delivered">Delivered</option>
+
+        <option value="Cancelled">Cancelled</option>
+
+    </select>
+
+</section>
+
+
+
+<!-- ==========================
+        ORDER LIST
+========================== -->
+
+<section
+class="orders-container"
+id="ordersContainer">
+
+
+<!-- Orders will load here -->
+
+
+</section>
+
+
+
+
+<script src="../assets/js/seller-orders.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NexCart Wishlist</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+
+<link rel="stylesheet" href="../assets/css/navbar.css">
+<link rel="stylesheet" href="../assets/css/wishlist.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+
+<!-- ===========================
+        TOP INFO BAR
+============================ -->
+
+<div class="top-bar">
+
+    <div class="container top-container">
+
+        <div class="top-left">
+
+            🚚 Free Shipping Above ₹999
+
+        </div>
+
+        <div class="top-right">
+
+            <span>📞 +91 98765 43210</span>
+
+            <span>|</span>
+
+            <span>support@nexcart.com</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- ===========================
+            NAVBAR
+============================ -->
+
+<nav class="navbar">
+
+    <div class="container nav-container">
+
+        <!-- Logo -->
+
+        <a href="index.html" class="logo">
+
+            <span>Nex</span>Cart
+
+        </a>
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                placeholder="Search Products...">
+
+        </div>
+
+        <!-- Right Side -->
+
+        <div class="nav-right">
+
+            <!-- Wishlist -->
+
+  <a href="#"
+class="nav-icon"
+onclick="openWishlist()">
+
+<i class="fa-regular fa-heart"></i>
+
+</a>
+
+            <!-- Cart -->
+
+      <a href="#"
+class="nav-icon"
+onclick="openCart()">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+</a>
+
+            <!-- Login -->
+<!-- Login Dropdown -->
+
+<div class="login-dropdown">
+
+    <button id="loginBtn" class="login-btn" type="button">
+
+        <span id="loginText">Login</span>
+
+        <i class="fa-solid fa-chevron-down"></i>
+
+    </button>
+
+    <div class="dropdown-content" id="dropdownMenu">
+
+        <!-- Filled by JavaScript -->
+
+    </div>
+
+</div>
+
+</div>
+
+        </div>
+
+</nav>
+<section class="wishlist-page">
+
+
+<div class="wishlist-header">
+
+<h1>
+My Wishlist ❤️
+</h1>
+
+<p>
+Save your favourite products and shop anytime.
+</p>
+
+</div>
+
+
+
+<div id="wishlistItems" class="wishlist-grid">
+
+
+</div>
+
+
+
+</section>
+
+
+<script src="../assets/js/navbar.js"></script>
+<script src="../assets/js/wishlist.js"></script>
+
+
+</body>
+
+</html>

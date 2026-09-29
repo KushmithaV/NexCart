@@ -1,0 +1,192 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+
+
+height:100vh;
+background:#f4f6f9;
+
+}
+
+.login-card{
+    width:420px;
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    margin:50px auto;
+}
+
+.login-card h1{
+
+text-align:center;
+margin-bottom:30px;
+
+}
+
+.input-group{
+
+margin-bottom:20px;
+
+}
+
+.input-group label{
+
+display:block;
+margin-bottom:8px;
+font-weight:600;
+
+}
+
+.input-group input{
+
+width:100%;
+padding:14px;
+border:1px solid #ddd;
+border-radius:10px;
+outline:none;
+
+}
+
+.password-box{
+
+position:relative;
+
+}
+
+.password-box i{
+
+position:absolute;
+right:15px;
+top:16px;
+cursor:pointer;
+
+}
+
+.admin-btn{
+
+width:100%;
+padding:15px;
+border:none;
+background:#ff7300;
+color:#fff;
+font-size:17px;
+font-weight:600;
+border-radius:10px;
+cursor:pointer;
+
+}
+
+.admin-btn:hover{
+
+background:#111;
+
+}
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        min-height: 100vh;
+        padding: 15px;
+        align-items: center;
+    }
+
+    .login-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 28px 20px;
+        border-radius: 16px;
+    }
+
+    .login-card h1 {
+        font-size: 27px;
+        margin-bottom: 25px;
+    }
+
+    .input-group {
+        margin-bottom: 18px;
+    }
+
+    .input-group label {
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 13px;
+        font-size: 16px;
+        min-height: 48px;
+    }
+
+    .password-box input {
+        padding-right: 45px;
+    }
+
+    .password-box i {
+        right: 14px;
+        top: 50%;
+    }
+
+    .admin-btn {
+        padding: 14px;
+        font-size: 16px;
+        min-height: 48px;
+    }
+}
+@media (max-width: 600px) {
+
+    .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        margin-left: 2px;
+        padding: 8px 12px !important;
+    }
+
+    .logo {
+        flex-shrink: 0;
+        margin-right: 5px;
+    }
+
+    .home-btn {
+        flex-shrink: 0;
+        margin-left: -40px;
+    }
+
+    .search-box {
+        flex: 1;
+        min-width: 0;
+        margin: 0;
+        
+    }
+
+    .nav-right {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        gap: -80px !important;
+        margin-right: 40px;
+    }
+
+    .nav-icon {
+        flex-shrink: 0;
+        margin-right:- 60px;
+    }
+
+    .login-dropdown {
+        flex-shrink: 0;
+        margin-right: -15px;
+        max-width: 8px;
+    }
+}

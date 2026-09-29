@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | NexCart</title>
+
+    <link rel="stylesheet" href="../assets/css/checkout.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="checkout-header">
+
+        <a href="cart.html" class="back-btn">
+            <i class="fa-solid fa-arrow-left"></i> Back to Cart
+        </a>
+
+        <div class="logo">
+            <span>Nex</span>Cart
+        </div>
+
+    </header>
+
+
+    <main class="checkout-container">
+
+        <!-- Left Section -->
+        <section class="checkout-left">
+
+            <!-- Shipping Address -->
+            <div class="card">
+
+                <h2>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Shipping Address
+                </h2>
+
+                <div class="form-grid">
+
+                    <input id="fullName" type="text" placeholder="Full Name">
+
+<input id="phone" type="tel" placeholder="Phone Number">
+
+<input id="email" type="email" placeholder="Email Address">
+
+<textarea id="address" rows="4" placeholder="Address"></textarea>
+
+<input id="city" type="text" placeholder="City">
+
+<input id="state" type="text" placeholder="State">
+
+<input id="pincode" type="text" placeholder="Pincode">
+                </div>
+ <button type="button" class="edit-btn" onclick="editShipping()">
+    Edit
+</button>
+
+<button type="button" class="save-btn" onclick="saveShipping()" style="display:none;">
+    Save
+</button>
+
+            </div>
+
+
+            <!-- Delivery -->
+            <div class="card">
+
+                <h2>
+                    <i class="fa-solid fa-truck"></i>
+                    Delivery Method
+                </h2>
+
+<label class="option">
+
+<input 
+type="radio"
+name="delivery"
+value="standard"
+id="standardDelivery"
+checked>
+
+<div>
+<h4>Standard Delivery</h4>
+<p>3-5 Business Days • FREE</p>
+</div>
+
+</label>
+
+
+<label class="option">
+
+<input 
+type="radio"
+name="delivery"
+value="express"
+id="expressDelivery">
+
+<div>
+<h4>Express Delivery</h4>
+<p>1-2 Business Days • ₹99</p>
+</div>
+
+</label>
+
+            </div>
+
+
+            <!-- Payment -->
+<!-- Payment -->
+<div class="card">
+
+    <h2>
+        <i class="fa-solid fa-credit-card"></i>
+        Payment Method
+    </h2>
+
+
+    <!-- COD -->
+
+    <label class="option payment-option">
+
+        <input 
+        type="radio" 
+        name="payment"
+        value="cod"
+        id="codPayment">
+
+
+        <div>
+
+            <h4>
+                Cash on Delivery
+            </h4>
+
+            <p>
+                Pay when your order arrives
+            </p>
+
+            <span class="cod-charge">
+                + ₹20 COD charges applicable
+            </span>
+
+        </div>
+
+    </label>
+
+
+
+    <!-- UPI -->
+
+    <label class="option payment-option">
+
+        <input 
+        type="radio" 
+        name="payment"
+        value="upi"
+        id="upiPayment">
+
+
+        <div>
+
+            <h4>
+                UPI Payment
+            </h4>
+
+            <p>
+                Google Pay, PhonePe, Paytm
+            </p>
+
+        </div>
+
+
+    </label>
+
+
+
+    <!-- UPI BOX -->
+
+    <div class="payment-box" id="upiBox">
+
+
+        <h3>
+            Select UPI App
+        </h3>
+
+
+
+        <div class="upi-apps">
+
+
+            <button 
+            type="button"
+            class="upi-app"
+            data-app="Google Pay">
+
+                <i class="fa-brands fa-google-pay"></i>
+
+                Google Pay
+
+            </button>
+
+
+
+
+            <button 
+            type="button"
+            class="upi-app"
+            data-app="PhonePe">
+
+                <i class="fa-solid fa-mobile-screen"></i>
+
+                PhonePe
+
+            </button>
+
+
+
+
+            <button 
+            type="button"
+            class="upi-app"
+            data-app="Paytm">
+
+                <i class="fa-solid fa-wallet"></i>
+
+                Paytm
+
+            </button>
+
+
+        </div>
+
+
+
+        <p id="selectedUpiApp">
+            
+            Select an app
+
+        </p>
+
+
+
+        <input 
+        type="text"
+        id="upiId"
+        placeholder="Enter UPI ID (example@upi)">
+
+
+
+        <button 
+        type="button"
+        class="verify-btn"
+        id="verifyUpi">
+
+            Verify Payment
+
+        </button>
+
+
+    </div>
+
+
+
+
+
+
+    <!-- CARD -->
+
+    <label class="option payment-option">
+
+
+        <input 
+        type="radio"
+        name="payment"
+        value="card"
+        id="cardPayment">
+
+
+
+        <div>
+
+            <h4>
+                Credit / Debit Card
+            </h4>
+
+            <p>
+                Visa, Mastercard, RuPay
+            </p>
+
+        </div>
+
+
+    </label>
+
+
+
+    <!-- CARD BOX -->
+
+    <div class="payment-box" id="cardBox">
+
+
+        <h3>
+            Enter Card Details
+        </h3>
+
+
+
+        <input
+        type="text"
+        id="cardNumber"
+        placeholder="Card Number"
+        maxlength="16">
+
+
+
+        <input
+        type="text"
+        id="cardName"
+        placeholder="Card Holder Name">
+
+
+
+        <div class="card-row">
+
+
+            <input
+            type="text"
+            id="expiry"
+            placeholder="MM/YY">
+
+
+
+            <input
+            type="password"
+            id="cvv"
+            placeholder="CVV"
+            maxlength="3">
+
+
+        </div>
+
+
+
+        <button
+        type="button"
+        class="verify-btn"
+        id="verifyCard">
+
+
+            Verify Card Payment
+
+
+        </button>
+
+
+
+    </div>
+
+
+
+
+
+
+    <!-- NET BANKING -->
+
+    <label class="option payment-option">
+
+
+        <input 
+        type="radio"
+        name="payment"
+        value="netbanking"
+        id="netBanking">
+
+
+        <div>
+
+            <h4>
+                Net Banking
+            </h4>
+
+
+            <p>
+                Select your bank and pay securely
+            </p>
+
+
+        </div>
+
+
+    </label>
+
+
+
+    <div class="payment-box" id="bankBox">
+
+
+        <select id="bankSelect">
+
+            <option value="">
+                Select Bank
+            </option>
+
+            <option>
+                State Bank of India
+            </option>
+
+            <option>
+                HDFC Bank
+            </option>
+
+            <option>
+                ICICI Bank
+            </option>
+
+            <option>
+                Axis Bank
+            </option>
+
+        </select>
+
+
+
+        <button
+        type="button"
+        class="verify-btn"
+        id="verifyBank">
+
+            Continue Payment
+
+        </button>
+
+
+    </div>
+
+
+
+
+
+    <!-- Refund Note -->
+
+    <div class="refund-note">
+
+
+        <i class="fa-solid fa-circle-info"></i>
+
+
+        <p>
+
+        <strong>Cancellation Policy:</strong>
+        If you cancel your order, only 95% of the amount will be refunded.
+        5% will be deducted as cancellation charges.
+
+        </p>
+
+
+    </div>
+
+
+</div>
+
+        </section>
+
+
+        <!-- Right Section -->
+        <aside class="checkout-right">
+
+            <div class="card">
+
+                <h2>Order Summary</h2>
+
+                <!-- JS will load products here -->
+                <div id="checkoutItems">
+
+                </div>
+
+                <hr>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="subtotal">₹0</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span id="shipping">FREE</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Discount</span>
+                    <span id="discount">₹0</span>
+                </div>
+
+                <hr>
+
+                <div class="summary-row total">
+
+                    <span>Total</span>
+
+                    <span id="totalAmount">₹0</span>
+
+                </div>
+
+
+                <div class="coupon">
+
+                    <input type="text"
+                        placeholder="Promo Code">
+
+                    <button>Apply</button>
+
+                </div>
+
+
+                <button 
+class="place-order-btn"
+disabled>
+
+<i class="fa-solid fa-lock"></i>
+
+Place Order
+
+</button>
+
+
+                <div class="features">
+
+                    <div>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        Secure Payment
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-truck-fast"></i>
+                        Fast Delivery
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-arrow-rotate-left"></i>
+                        Easy Returns
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+    <!-- Success Popup -->
+
+    <div class="success-popup" id="successPopup">
+
+        <div class="popup-content">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <h2>Order Placed Successfully!</h2>
+
+            <p>
+                Thank you for shopping with NexCart.
+            </p>
+
+            <button>
+                Continue Shopping
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="../assets/js/checkout.js"></script>
+
+</body>
+</html>

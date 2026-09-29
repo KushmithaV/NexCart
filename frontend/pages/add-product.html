@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Add Product | NexCart</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/navbar.css">
+
+<link rel="stylesheet" href="../assets/css/add-product.css">
+<link rel="stylesheet" href="../assets/css/auth.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+
+
+</head>
+
+
+
+<header class="page-header">
+
+<div class="header-left">
+
+<h1>
+
+Add New Product
+
+</h1>
+
+<p>
+
+Fill in the product details below.
+
+</p>
+
+</div>
+
+<a
+href="seller-dashboard.html"
+class="back-btn">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+Dashboard
+
+</a>
+
+</header>
+
+
+<!-- ==========================================
+            MAIN
+========================================== -->
+
+<div class="product-container">
+
+
+<!-- LEFT -->
+
+<div class="form-section">
+
+<form id="productForm">
+
+
+<!-- Product Name -->
+
+<div class="input-group">
+
+<label>
+
+Product Name
+
+</label>
+
+<input
+type="text"
+id="product_name"
+placeholder="Enter Product Name"
+required>
+
+</div>
+
+
+<!-- Brand -->
+
+<div class="input-group">
+
+<label>
+
+Brand
+
+</label>
+
+<select id="brand">
+
+<option value="">
+    Select Brand
+</option>
+
+<option value="generic">
+    Generic / No Brand
+</option>
+
+<option value="1">
+    Apple
+</option>
+
+<option value="2">
+    Samsung
+</option>
+
+<option value="3">
+    Boat
+</option>
+
+<option value="4">
+    Nike
+</option>
+
+<option value="5">
+    Adidas
+</option>
+
+<option value="6">
+    Puma
+</option>
+
+<option value="7">
+    Classmate
+</option>
+
+<option value="8">
+    Godrej
+</option>
+
+<option value="9">
+    Aashirvaad
+</option>
+
+<option value="10">
+    Cosco
+</option>
+
+<option value="11">
+    Lakme
+</option>
+
+<option value="12">
+    Funskool
+</option>
+
+</select>
+
+
+<label>Custom Brand (Optional)</label>
+
+<input 
+type="text"
+id="custom_brand"
+placeholder="Enter your brand name">
+
+</div>
+
+
+<!-- Category -->
+
+<div class="row">
+
+<div class="input-group">
+
+<label>
+
+Category
+
+</label>
+
+<select id="category" required>
+
+<option value="">Choose Category</option>
+
+<option value="1">Electronics</option>
+
+<option value="2">Fashion</option>
+
+<option value="3">Groceries</option>
+
+<option value="4">Furniture</option>
+
+<option value="5">Beauty</option>
+
+<option value="6">Sports</option>
+
+
+
+</select>
+
+</div>
+
+
+<div class="input-group">
+
+<label>
+
+Price
+
+</label>
+
+<input
+type="number"
+id="price"
+placeholder="₹ 0">
+
+</div>
+
+</div>
+
+
+<!-- Discount -->
+
+<div class="row">
+
+<div class="input-group">
+
+<label>
+
+Discount %
+
+</label>
+
+<input
+type="number"
+id="discount"
+placeholder="10">
+
+</div>
+
+
+<div class="input-group">
+
+<label>
+
+Stock
+
+</label>
+
+<input
+type="number"
+id="stock"
+placeholder="50">
+
+</div>
+
+</div>
+
+
+<!-- SKU -->
+
+<div class="input-group">
+
+<label>
+
+SKU
+
+</label>
+
+<input
+type="text"
+id="sku"
+placeholder="ABC-1234">
+
+</div>
+
+
+<!-- Description -->
+
+<div class="input-group">
+
+<label>
+
+Description
+
+</label>
+
+<textarea
+id="description"
+rows="6"
+placeholder="Write product description..."></textarea>
+
+</div>
+
+
+<!-- Image -->
+
+<div class="input-group">
+
+<label>
+
+Product Image
+
+</label>
+
+<input
+type="file"
+id="product_image"
+accept="image/*">
+
+</div>
+
+
+<button
+type="submit"
+class="save-btn">
+
+<i class="fa-solid fa-floppy-disk"></i>
+
+Save Product
+
+</button>
+
+</form>
+
+</div>
+
+
+<!-- RIGHT -->
+
+<div class="preview-section">
+
+<h2>
+
+Live Preview
+
+</h2>
+
+<div class="preview-card">
+
+<img
+id="previewImage"
+src="https://placehold.co/350x260?text=Product+Image"
+alt="Preview">
+
+<h3 id="previewName">
+
+Product Name
+
+</h3>
+
+<p id="previewBrand">
+
+Brand
+
+</p>
+
+<h4 id="previewPrice">
+
+₹0
+
+</h4>
+
+<span id="previewCategory">
+
+Category
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+<!-- Toast -->
+<div id="toast" class="toast"></div>
+<script src="../assets/js/toast.js"></script>
+<script src="../assets/js/add-product.js"></script>
+
+</body>
+
+</html>

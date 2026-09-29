@@ -1,0 +1,413 @@
+/* ==========================================
+                PROFILE PAGE
+========================================== */
+
+.profile-page{
+    background:#f5f5f5;
+    min-height:100vh;
+    padding:50px 0;
+}
+
+.profile-wrapper{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:320px 1fr;
+    gap:30px;
+}
+
+/* ==========================================
+                LEFT SIDE
+========================================== */
+
+.profile-card{
+    background:#151515;
+    border-radius:25px;
+    padding:40px 30px;
+    text-align:center;
+    color:#fff;
+    margin-bottom:25px;
+    border:1px solid #2c2c2c;
+}
+
+.profile-avatar{
+    width:120px;
+    height:120px;
+    margin:auto;
+    border-radius:50%;
+    background:#ff7300;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:46px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.profile-card h2{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.profile-card p{
+    color:#bdbdbd;
+    word-break:break-word;
+}
+
+/* ==========================================
+                MENU
+========================================== */
+
+.profile-menu{
+    background:#151515;
+    border-radius:25px;
+    overflow:hidden;
+    border:1px solid #2c2c2c;
+}
+
+.profile-menu a,
+.profile-menu button{
+
+    width:100%;
+    padding:20px 25px;
+    border:none;
+    background:none;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    text-decoration:none;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+}
+
+.profile-menu a:hover,
+.profile-menu button:hover{
+
+    background:#ff7300;
+}
+
+.profile-menu i{
+    width:22px;
+    text-align:center;
+}
+
+/* ==========================================
+                RIGHT SIDE
+========================================== */
+
+.form-card{
+
+    background:#fff;
+    border-radius:25px;
+    padding:40px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.form-card h2{
+
+    color:#ff7300;
+    margin-bottom:35px;
+}
+
+.form-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.form-group{
+
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group label{
+
+    margin-bottom:10px;
+    font-weight:600;
+    color:#333;
+}
+
+.form-group input,
+.form-group textarea{
+
+    padding:14px 18px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+
+    border-color:#ff7300;
+}
+
+textarea{
+
+    resize:none;
+    margin-top:10px;
+}
+.edit-btn{
+
+    margin-top:30px;
+    background:#ff7300;
+    color:#fff;
+    border:none;
+    padding:16px 40px;
+    border-radius:35px;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.edit-btn:hover{
+
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(255,115,0,.35);
+}
+
+.save-btn{
+
+    margin-top:30px;
+    background:#ff7300;
+    color:#fff;
+    border:none;
+    padding:16px 40px;
+    border-radius:35px;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.save-btn:hover{
+
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(255,115,0,.35);
+}
+
+/* ==========================================
+                RESPONSIVE
+========================================== */
+
+@media(max-width:900px){
+
+.profile-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+.form-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/* ==========================================
+        PROFILE PAGE - TABLET
+========================================== */
+
+@media (max-width: 900px){
+
+    .profile-page{
+        padding:40px 5%;
+    }
+
+    .profile-wrapper{
+        width:100%;
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .profile-card{
+        padding:35px 25px;
+        margin-bottom:20px;
+    }
+
+    .profile-avatar{
+        width:100px;
+        height:100px;
+        font-size:40px;
+    }
+
+    .profile-card h2{
+        font-size:26px;
+    }
+
+    .profile-menu a,
+    .profile-menu button{
+        padding:17px 22px;
+        font-size:16px;
+    }
+
+    .form-card{
+        padding:30px;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+}
+
+
+/* ==========================================
+        PROFILE PAGE - MOBILE
+========================================== */
+
+@media (max-width: 600px){
+
+    .profile-page{
+        padding:30px 4%;
+    }
+
+    .profile-wrapper{
+        width:100%;
+        gap:20px;
+    }
+
+
+    /* ---------- PROFILE CARD ---------- */
+
+    .profile-card{
+        border-radius:18px;
+        padding:30px 20px;
+    }
+
+    .profile-avatar{
+        width:90px;
+        height:90px;
+        font-size:36px;
+        margin-bottom:15px;
+    }
+
+    .profile-card h2{
+        font-size:23px;
+        margin-bottom:7px;
+    }
+
+    .profile-card p{
+        font-size:13px;
+    }
+
+
+    /* ---------- PROFILE MENU ---------- */
+
+    .profile-menu{
+        border-radius:18px;
+    }
+
+    .profile-menu a,
+    .profile-menu button{
+        padding:15px 18px;
+        font-size:14px;
+        gap:12px;
+    }
+
+    .profile-menu i{
+        width:20px;
+    }
+
+
+    /* ---------- FORM CARD ---------- */
+
+    .form-card{
+        padding:25px 18px;
+        border-radius:18px;
+    }
+
+    .form-card h2{
+        font-size:22px;
+        margin-bottom:25px;
+    }
+
+
+    /* ---------- FORM ---------- */
+
+    .form-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .form-group label{
+        font-size:14px;
+        margin-bottom:7px;
+    }
+
+    .form-group input,
+    .form-group textarea{
+        width:100%;
+        padding:12px 14px;
+        font-size:14px;
+        border-radius:10px;
+    }
+
+    textarea{
+        margin-top:0;
+    }
+
+
+    /* ---------- BUTTONS ---------- */
+
+    .edit-btn,
+    .save-btn{
+        width:100%;
+        margin-top:25px;
+        padding:13px 20px;
+        font-size:15px;
+    }
+
+}
+
+
+/* ==========================================
+        PROFILE PAGE - SMALL PHONES
+========================================== */
+
+@media (max-width: 400px){
+
+    .profile-page{
+        padding:25px 3%;
+    }
+
+    .profile-card{
+        padding:25px 15px;
+    }
+
+    .profile-avatar{
+        width:80px;
+        height:80px;
+        font-size:32px;
+    }
+
+    .profile-card h2{
+        font-size:21px;
+    }
+
+    .profile-menu a,
+    .profile-menu button{
+        padding:14px 15px;
+        font-size:13px;
+    }
+
+    .form-card{
+        padding:22px 15px;
+    }
+
+    .form-card h2{
+        font-size:20px;
+    }
+
+}

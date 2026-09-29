@@ -1,0 +1,2179 @@
+/* ==========================================
+            GOOGLE FONT
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#f8f8f8;
+
+}
+
+/* ==========================================
+            AUTH PAGE
+========================================== */
+
+.auth-page{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+
+    background:linear-gradient(135deg,#f5f5f5,#ffffff);
+
+}
+
+/* ==========================================
+            CONTAINER
+========================================== */
+
+.auth-container{
+
+    width:1200px;
+    max-width:100%;
+
+    background:#fff;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+
+}
+
+/* ==========================================
+            LEFT
+========================================== */
+
+.auth-left{
+
+    background:#111;
+
+    color:#fff;
+
+    padding:70px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+}
+
+.welcome{
+
+    display:inline-block;
+
+    color:#ff6b00;
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.auth-left h1{
+
+    font-size:52px;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+.auth-left p{
+
+    color:#d6d6d6;
+
+    line-height:1.9;
+
+    margin-bottom:45px;
+
+}
+
+.auth-left img{
+
+    width:100%;
+
+    max-width:420px;
+
+    margin:auto;
+
+}
+
+/* ==========================================
+            RIGHT
+========================================== */
+
+.auth-right{
+
+    padding:70px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.auth-right h2{
+
+    font-size:40px;
+
+    color:#111;
+
+}
+
+.sub-title{
+
+    margin-top:10px;
+
+    margin-bottom:40px;
+
+    color:#777;
+
+}
+
+/* ==========================================
+            INPUT
+========================================== */
+
+.input-group{
+
+    margin-bottom:25px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+    color:#222;
+
+}
+
+.input-group input{
+
+    width:100%;
+
+    height:58px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    padding:0 18px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.input-group input:focus{
+
+    border-color:#ff6b00;
+
+    box-shadow:0 0 0 4px rgba(255,107,0,.12);
+
+}
+
+/* ==========================================
+            PASSWORD
+========================================== */
+
+.password-box{
+
+    position:relative;
+
+}
+
+.password-box i{
+
+    position:absolute;
+
+    right:20px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    color:#666;
+
+}
+
+/* ==========================================
+            REMEMBER
+========================================== */
+
+.remember-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.remember-row label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#555;
+
+}
+
+.remember-row a{
+
+    color:#ff6b00;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+}
+
+/* ==========================================
+            LOGIN BUTTON
+========================================== */
+
+.login-btnn{
+
+    width:100%;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#ff6b00;
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+    justify-content: center !important;
+   
+
+}
+
+.login-btn:hover{
+
+    background:#ff6b00;
+
+}
+
+/* ==========================================
+            DIVIDER
+========================================== */
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    margin:35px 0;
+
+}
+
+.divider::before,
+.divider::after{
+
+    content:"";
+
+    flex:1;
+
+    height:1px;
+
+    background:#ddd;
+
+}
+
+.divider span{
+
+    padding:0 20px;
+
+    color:#888;
+
+}
+
+/* ==========================================
+            GOOGLE BUTTON
+========================================== */
+
+.google-btn{
+
+    width:100%;
+
+    height:58px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    background:#fff;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.google-btn i{
+
+    color:#ff6b00;
+
+    margin-right:10px;
+
+}
+
+.google-btn:hover{
+
+    background:#fafafa;
+
+}
+
+/* ==========================================
+            BOTTOM
+========================================== */
+
+.bottom-text{
+
+    text-align:center;
+
+    margin-top:35px;
+
+    color:#666;
+
+}
+
+.bottom-text a{
+
+    color:#ff6b00;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+            RESPONSIVE
+========================================== */
+
+@media(max-width:991px){
+
+.auth-container{
+
+grid-template-columns:1fr;
+
+}
+
+.auth-left{
+
+display:none;
+
+}
+
+.auth-right{
+
+padding:50px 30px;
+
+}
+
+.auth-right h2{
+
+font-size:34px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.auth-page{
+
+padding:15px;
+
+}
+
+.auth-right{
+
+padding:35px 20px;
+
+}
+
+.login-btn,
+.google-btn,
+.input-group input{
+
+height:52px;
+
+}
+
+}
+/*=========================================
+        REGISTER PAGE
+==========================================*/
+
+#registerForm .input-group{
+
+    margin-bottom:20px;
+
+}
+
+#registerForm .remember-row{
+
+    margin:20px 0 30px;
+
+}
+
+#registerForm .login-btn{
+
+    margin-top:10px;
+
+}
+/*====================================
+        TOAST NOTIFICATION
+====================================*/
+
+
+/* =====================================================
+            SELLER PAGE
+===================================================== */
+
+.seller-page{
+
+    background:#f7f8fc;
+
+}
+
+
+/* =====================================================
+            HERO
+===================================================== */
+
+.seller-hero{
+
+    background:
+    linear-gradient(135deg,#111,#2f2f2f);
+
+    color:#fff;
+
+    padding:90px 0 70px;
+
+    text-align:center;
+
+}
+
+.seller-tag{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    background:rgba(255,107,0,.12);
+
+    border:1px solid rgba(255,107,0,.4);
+
+    border-radius:40px;
+
+    color:#ff6b00;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    margin-bottom:28px;
+
+}
+
+.seller-hero h1{
+
+    font-size:62px;
+
+    font-weight:800;
+
+    line-height:1.15;
+
+    margin-bottom:22px;
+
+}
+
+.seller-hero h1 span{
+
+    color:#ff6b00;
+
+}
+
+.seller-hero p{
+
+    width:720px;
+
+    max-width:92%;
+
+    margin:auto;
+
+    color:#dadada;
+
+    line-height:1.9;
+
+    font-size:18px;
+
+}
+
+
+/* =====================================================
+            FEATURES
+===================================================== */
+
+.seller-features-section{
+
+    margin-top:-45px;
+
+    padding-bottom:70px;
+
+}
+
+.seller-feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:28px;
+
+}
+
+.seller-feature-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.seller-feature-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.seller-feature-card i{
+
+    width:78px;
+
+    height:78px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:auto;
+
+    background:#fff3eb;
+
+    color:#ff6b00;
+
+    font-size:30px;
+
+    margin-bottom:24px;
+
+}
+
+.seller-feature-card h3{
+
+    font-size:22px;
+
+    color:#111;
+
+    margin-bottom:12px;
+
+}
+
+.seller-feature-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+/* =====================================================
+            FORM
+===================================================== */
+
+.seller-form-section{
+
+    padding:0 0 100px;
+
+}
+
+.seller-form-card{
+
+    background:#fff;
+
+    border-radius:28px;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+    padding:55px;
+
+}
+
+.form-heading{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.form-heading h2{
+
+    font-size:42px;
+
+    color:#111;
+
+}
+
+.form-heading p{
+
+    margin-top:12px;
+
+    color:#777;
+
+}
+
+
+/* =====================================================
+            GRID
+===================================================== */
+
+.seller-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+.full-width{
+
+    grid-column:1/3;
+
+}
+
+
+/* =====================================================
+            INPUTS
+===================================================== */
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.input-group label{
+
+    margin-bottom:12px;
+
+    font-weight:600;
+
+    color:#222;
+
+}
+
+.input-icon{
+
+    height:60px;
+
+    border:1px solid #e6e6e6;
+
+    border-radius:16px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 20px;
+
+    transition:.3s;
+
+}
+
+.input-icon:hover{
+
+    border-color:#ff6b00;
+
+}
+
+.input-icon:focus-within{
+
+    border-color:#ff6b00;
+
+    box-shadow:0 0 0 4px rgba(255,107,0,.12);
+
+}
+
+.input-icon i{
+
+    color:#999;
+
+    width:28px;
+
+}
+
+.input-icon input{
+
+    flex:1;
+
+    height:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:15px;
+
+    font-family:'Poppins',sans-serif;
+
+}
+/* =====================================================
+            PASSWORD FIELD
+===================================================== */
+
+.password-box{
+
+    height:60px;
+
+    border:1px solid #e6e6e6;
+
+    border-radius:16px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 20px;
+
+    transition:.3s;
+
+}
+
+.password-box:hover{
+
+    border-color:#ff6b00;
+
+}
+
+.password-box:focus-within{
+
+    border-color:#ff6b00;
+
+    box-shadow:0 0 0 4px rgba(255,107,0,.12);
+
+}
+
+.password-box input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:15px;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+.password-box i{
+
+    cursor:pointer;
+
+    color:#777;
+
+    transition:.3s;
+
+}
+
+.password-box i:hover{
+
+    color:#ff6b00;
+
+}
+
+
+/* =====================================================
+            BUTTON
+===================================================== */
+
+.seller-btn-box{
+
+    margin-top:45px;
+
+    text-align:center;
+
+}
+
+.seller-btn{
+
+    width:100%;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:linear-gradient(135deg,#ff6b00,#ff8a00);
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(255,107,0,.25);
+
+}
+
+.seller-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 22px 45px rgba(255,107,0,.35);
+
+}
+
+.seller-btn:active{
+
+    transform:scale(.98);
+
+}
+
+
+/* =====================================================
+            LOGIN LINK
+===================================================== */
+
+.seller-btn-box p{
+
+    margin-top:28px;
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+.seller-btn-box a{
+
+    color:#ff6b00;
+
+    font-weight:600;
+
+}
+
+.seller-btn-box a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+/* =====================================================
+            CARD HOVER
+===================================================== */
+
+.seller-form-card{
+
+    transition:.4s;
+
+}
+
+.seller-form-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+}
+
+
+/* =====================================================
+            FEATURE HOVER
+===================================================== */
+
+.seller-feature-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.seller-feature-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:0;
+
+    height:4px;
+
+    background:#ff6b00;
+
+    transition:.35s;
+
+}
+
+.seller-feature-card:hover::before{
+
+    width:100%;
+
+}
+
+.seller-feature-card:hover i{
+
+    transform:rotate(8deg) scale(1.08);
+
+    background:#ff6b00;
+
+    color:#fff;
+
+}
+
+
+/* =====================================================
+            MOBILE
+===================================================== */
+
+@media(max-width:992px){
+
+.seller-hero{
+
+    padding:70px 0 60px;
+
+}
+
+.seller-hero h1{
+
+    font-size:48px;
+
+}
+
+.seller-feature-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.seller-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.full-width{
+
+    grid-column:auto;
+
+}
+
+.seller-form-card{
+
+    padding:40px;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.seller-hero h1{
+
+    font-size:36px;
+
+}
+
+.seller-hero p{
+
+    font-size:15px;
+
+}
+
+.seller-feature-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.seller-form-card{
+
+    padding:28px;
+
+}
+
+.form-heading h2{
+
+    font-size:30px;
+
+}
+
+}
+
+
+@media(max-width:480px){
+
+.seller-tag{
+
+    font-size:12px;
+
+}
+
+.seller-hero{
+
+    padding:55px 0;
+
+}
+
+.seller-hero h1{
+
+    font-size:30px;
+
+}
+
+.seller-hero p{
+
+    font-size:14px;
+
+}
+
+.input-icon,
+
+.password-box{
+
+    height:54px;
+
+}
+
+.seller-btn{
+
+    height:54px;
+
+    font-size:16px;
+
+}
+
+}
+/* ==========================================
+                TOAST
+========================================== */
+
+.toast{
+
+    position:fixed;
+
+    top:30px;
+
+    right:30px;
+
+    min-width:100px;
+
+    padding:16px 22px;
+
+    border-radius:12px;
+
+    color:#fff;
+
+    font-weight:500;
+
+    font-size:15px;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateX(100px);
+
+    transition:.35s;
+
+    z-index:9999;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
+
+}
+
+.toast.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateX(0);
+
+}
+
+.toast.success{
+
+    background:#28a745;
+
+}
+
+.toast.error{
+
+    background:#dc3545;
+
+}
+/* =====================================================
+                SELLER LOGIN PAGE
+===================================================== */
+
+.seller-login-page{
+
+    background:#f5f7fb;
+
+    min-height:100vh;
+
+   
+
+    padding: 0;
+
+}
+
+/* =====================================================
+                MAIN CARD
+===================================================== */
+
+.seller-login-card{
+
+    background:#fff;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    display:grid;
+
+    grid-template-columns:1.2fr 1fr;
+
+    box-shadow:0 25px 70px rgba(0,0,0,.08);
+
+}
+
+
+/* =====================================================
+                LEFT SIDE
+===================================================== */
+
+.seller-login-left{
+
+    background:linear-gradient(135deg,#111,#2c2c2c);
+
+    color:#fff;
+
+    padding:70px 60px;
+
+}
+
+.seller-login-left span{
+
+    color:#ff6b00;
+
+    letter-spacing:2px;
+
+    font-weight:700;
+
+    font-size:14px;
+
+}
+
+.seller-login-left h1{
+
+    font-size:48px;
+
+    margin:20px 0;
+
+}
+
+.seller-login-left p{
+
+    color:#d5d5d5;
+
+    line-height:1.9;
+
+    margin-bottom:45px;
+
+}
+
+
+/* =====================================================
+                BENEFITS
+===================================================== */
+
+.seller-benefits{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+
+}
+
+.seller-benefits div{
+
+    background:rgba(255,255,255,.08);
+
+    padding:18px;
+
+    border-radius:14px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    transition:.3s;
+
+}
+
+.seller-benefits div:hover{
+
+    background:#ff6b00;
+
+    transform:translateY(-4px);
+
+}
+
+.seller-benefits i{
+
+    font-size:22px;
+
+}
+
+
+/* =====================================================
+                RIGHT SIDE
+===================================================== */
+
+.seller-login-right{
+
+    padding:60px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.seller-login-right h2{
+
+    font-size:34px;
+
+    margin-bottom:35px;
+
+    color:#111;
+
+}
+
+
+/* =====================================================
+                INPUT GROUPS
+===================================================== */
+
+.input-group{
+
+    margin-bottom:24px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+    color:#333;
+
+}
+
+
+/* =====================================================
+                INPUT ICON
+===================================================== */
+
+.input-icon{
+
+    display:flex;
+
+    align-items:center;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+}
+
+.input-icon i{
+
+    width:55px;
+
+    text-align:center;
+
+    color:#888;
+
+}
+
+.input-icon input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    height:56px;
+
+    padding-right:15px;
+
+    font-size:15px;
+
+}
+
+
+/* =====================================================
+                PASSWORD
+===================================================== */
+
+.password-box{
+
+    display:flex;
+
+    align-items:center;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+}
+
+.password-box input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    height:56px;
+
+    padding:0 18px;
+
+    font-size:15px;
+
+}
+
+.password-box i{
+
+    width:55px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    color:#777;
+
+}
+
+
+/* =====================================================
+                REMEMBER
+===================================================== */
+
+.remember-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+    font-size:14px;
+
+}
+
+.remember-row a{
+
+    color:#ff6b00;
+
+    font-weight:600;
+
+}
+
+
+/* =====================================================
+                BUTTON
+===================================================== */
+
+.seller-btn{
+
+    width:100%;
+
+    height:56px;
+
+    border:none;
+
+    background:#ff6b00;
+
+    color:#fff;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.seller-btn:hover{
+
+    background:#111;
+
+}
+
+
+/* =====================================================
+                FOOTER
+===================================================== */
+
+.seller-bottom{
+
+    text-align:center;
+
+    margin-top:28px;
+
+    color:#666;
+
+}
+
+.seller-bottom a{
+
+    color:#ff6b00;
+
+    font-weight:700;
+
+}
+
+
+/* =====================================================
+                RESPONSIVE
+===================================================== */
+
+@media(max-width:992px){
+
+.seller-login-card{
+
+    grid-template-columns:1fr;
+
+}
+
+.seller-login-left{
+
+    text-align:center;
+
+}
+
+.seller-benefits{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.seller-login-left{
+
+    padding:45px 30px;
+
+}
+
+.seller-login-right{
+
+    padding:40px 25px;
+
+}
+
+.seller-login-left h1{
+
+    font-size:34px;
+
+}
+
+}
+/* ==========================================
+   LOGIN PAGE MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .auth-page {
+        min-height: auto;
+        padding: 25px 15px 40px;
+    }
+
+    .auth-container {
+        width: 100%;
+        display: block;
+        border-radius: 18px;
+    }
+
+    .auth-left {
+        display: none;
+    }
+
+    .auth-right {
+        width: 100%;
+        padding: 35px 25px;
+    }
+
+    .auth-right h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .sub-title {
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .input-group {
+        margin-bottom: 20px;
+    }
+
+    .input-group label {
+        font-size: 14px;
+    }
+
+    .input-group input {
+        height: 52px;
+        font-size: 14px;
+    }
+
+    .password-box {
+        width: 100%;
+    }
+
+    .password-box input {
+        height: 52px;
+    }
+
+    .remember-row {
+        font-size: 13px;
+        gap: 10px;
+    }
+
+    .remember-row a {
+        white-space: nowrap;
+    }
+
+    .login-btnn {
+        height: 52px;
+        font-size: 15px;
+    }
+
+    .google-btn {
+        height: 52px;
+        font-size: 14px;
+    }
+
+    .divider {
+        margin: 25px 0;
+    }
+
+    .bottom-text {
+        font-size: 14px;
+        margin-top: 25px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .auth-page {
+        padding: 15px 10px 30px;
+    }
+
+    .auth-container {
+        border-radius: 15px;
+    }
+
+    .auth-right {
+        padding: 30px 18px;
+    }
+
+    .auth-right h2 {
+        font-size: 27px;
+    }
+
+    .sub-title {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .remember-row {
+        font-size: 12px;
+    }
+
+    .remember-row label {
+        gap: 5px;
+    }
+
+    .remember-row a {
+        font-size: 12px;
+    }
+
+    .bottom-text {
+        font-size: 13px;
+    }
+
+}
+/* =====================================================
+   SELLER REGISTRATION - COMPLETE MOBILE VIEW
+===================================================== */
+
+@media (max-width: 768px){
+
+    /* ================= HERO ================= */
+
+    .seller-hero{
+        padding:50px 20px 55px;
+        text-align:center;
+    }
+
+    .seller-tag{
+        font-size:11px;
+        padding:8px 16px;
+        letter-spacing:1.5px;
+        margin-bottom:20px;
+    }
+
+    .seller-hero h1{
+        font-size:32px;
+        line-height:1.2;
+        margin-bottom:18px;
+    }
+
+    .seller-hero p{
+        width:100%;
+        max-width:100%;
+        font-size:14px;
+        line-height:1.7;
+    }
+
+
+    /* ================= FEATURES ================= */
+
+    .seller-features-section{
+        margin-top:-25px;
+        padding:0 15px 50px;
+    }
+
+    .seller-feature-grid{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:12px;
+    }
+
+    .seller-feature-card{
+        padding:18px 12px;
+        border-radius:15px;
+        min-height:160px;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .seller-feature-card i{
+        width:48px;
+        height:48px;
+        font-size:20px;
+        margin-bottom:11px;
+    }
+
+    .seller-feature-card h3{
+        font-size:16px;
+        margin-bottom:6px;
+    }
+
+    .seller-feature-card p{
+        font-size:12px;
+        line-height:1.5;
+    }
+
+
+    /* ================= FORM SECTION ================= */
+
+    .seller-form-section{
+        padding:0 15px 60px;
+    }
+
+    .seller-form-card{
+        width:100%;
+        padding:28px 20px;
+        border-radius:20px;
+    }
+
+
+    /* ================= FORM HEADING ================= */
+
+    .form-heading{
+        margin-bottom:30px;
+    }
+
+    .form-heading h2{
+        font-size:28px;
+        line-height:1.3;
+    }
+
+    .form-heading p{
+        font-size:13px;
+        line-height:1.6;
+        margin-top:8px;
+    }
+
+
+    /* ================= FORM GRID ================= */
+
+    .seller-grid{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .full-width{
+        grid-column:auto;
+    }
+
+
+    /* ================= LABELS ================= */
+
+    .input-group label{
+        font-size:14px;
+        margin-bottom:8px;
+    }
+
+
+    /* ================= INPUTS ================= */
+
+    .input-icon{
+        width:100%;
+        height:54px;
+        padding:0 15px;
+        border-radius:13px;
+    }
+
+    .input-icon i{
+        width:25px;
+        font-size:14px;
+    }
+
+    .input-icon input{
+        font-size:14px;
+    }
+
+
+    /* ================= PASSWORD ================= */
+
+    .password-box{
+        width:100%;
+        height:54px;
+        padding:0 15px;
+        border-radius:13px;
+    }
+
+    .password-box input{
+        font-size:14px;
+    }
+
+    .password-box i{
+        font-size:14px;
+    }
+
+
+    /* ================= REGISTER BUTTON ================= */
+
+    .seller-btn-box{
+        margin-top:30px;
+    }
+
+    .seller-btn{
+        width:100%;
+        height:54px;
+        border-radius:14px;
+        font-size:16px;
+    }
+
+    .seller-btn-box p{
+        margin-top:20px;
+        font-size:13px;
+        line-height:1.6;
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+===================================================== */
+
+@media (max-width: 480px){
+
+    /* ================= HERO ================= */
+
+    .seller-hero{
+        padding:40px 15px 50px;
+    }
+
+    .seller-tag{
+        font-size:10px;
+        padding:7px 13px;
+        letter-spacing:1.2px;
+    }
+
+    .seller-hero h1{
+        font-size:28px;
+        line-height:1.2;
+    }
+
+    .seller-hero p{
+        font-size:13px;
+        line-height:1.6;
+    }
+
+
+    /* ================= FEATURES ================= */
+
+    .seller-features-section{
+        margin-top:-20px;
+        padding:0 10px 45px;
+    }
+
+    .seller-feature-grid{
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+
+    .seller-feature-card{
+        padding:15px 9px;
+        min-height:145px;
+        border-radius:13px;
+    }
+
+    .seller-feature-card i{
+        width:42px;
+        height:42px;
+        font-size:18px;
+        margin-bottom:9px;
+    }
+
+    .seller-feature-card h3{
+        font-size:14px;
+        margin-bottom:5px;
+    }
+
+    .seller-feature-card p{
+        font-size:11px;
+        line-height:1.4;
+    }
+
+
+    /* ================= FORM ================= */
+
+    .seller-form-section{
+        padding:0 10px 50px;
+    }
+
+    .seller-form-card{
+        padding:23px 16px;
+        border-radius:17px;
+    }
+
+
+    /* ================= FORM HEADING ================= */
+
+    .form-heading{
+        margin-bottom:25px;
+    }
+
+    .form-heading h2{
+        font-size:24px;
+    }
+
+    .form-heading p{
+        font-size:12px;
+        line-height:1.5;
+    }
+
+
+    /* ================= INPUTS ================= */
+
+    .input-group label{
+        font-size:13px;
+    }
+
+    .input-icon,
+    .password-box{
+        height:52px;
+        border-radius:12px;
+    }
+
+    .input-icon{
+        padding:0 13px;
+    }
+
+    .input-icon i{
+        width:23px;
+    }
+
+    .input-icon input,
+    .password-box input{
+        font-size:13px;
+    }
+
+    .password-box{
+        padding:0 13px;
+    }
+
+
+    /* ================= BUTTON ================= */
+
+    .seller-btn-box{
+        margin-top:25px;
+    }
+
+    .seller-btn{
+        height:52px;
+        border-radius:13px;
+        font-size:15px;
+    }
+
+    .seller-btn-box p{
+        font-size:12px;
+        margin-top:17px;
+    }
+
+}
+/* =====================================================
+   NEXCART NAVBAR - MOBILE
+===================================================== */
+
+@media (max-width: 768px){
+
+    .navbar{
+        width:100%;
+    }
+
+    .nav-container{
+        width:100%;
+        max-width:none;
+        height:auto;
+        padding:14px 15px;
+
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:10px;
+    }
+
+    /* HOME */
+    .nav-container > a:first-child{
+        flex-shrink:0;
+    }
+
+    /* LOGO */
+    .logo{
+        font-size:30px;
+        white-space:nowrap;
+        flex-shrink:0;
+    }
+
+    /* SEARCH */
+    .search-box{
+        order:3;
+        width:100%;
+        margin:5px 0 0;
+    }
+
+    .search-box input{
+        width:100%;
+    }
+
+    /* RIGHT SIDE */
+    .nav-right{
+        display:flex;
+        align-items:center;
+        gap:8px;
+        flex-shrink:0;
+    }
+
+    .nav-icon{
+        width:42px;
+        height:42px;
+        flex-shrink:0;
+    }
+
+    .login-btn{
+        height:42px;
+        padding:0 14px;
+        white-space:nowrap;
+        font-size:14px;
+    }
+}
+
+
+/* =====================================================
+   SMALL PHONES
+===================================================== */
+
+@media (max-width: 480px){
+
+    .nav-container{
+        padding:12px 12px;
+        gap:7px;
+        flex-wrap:wrap;
+    }
+
+    .logo{
+        font-size:26px;
+    }
+
+    .nav-right{
+        gap:5px;
+    }
+
+    .nav-icon{
+        width:40px;
+        height:40px;
+    }
+
+    .login-btn{
+        height:40px;
+        padding:0 12px;
+        font-size:13px;
+    }
+
+    .search-box{
+        flex-basis:100%;
+        margin-top:6px;
+    }
+
+    .search-box input{
+        height:48px;
+        font-size:14px;
+    }
+}

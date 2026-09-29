@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Order Success | NexCart</title>
+
+<link rel="stylesheet" href="../assets/css/order-success.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<header class="success-header">
+
+    <div class="logo">
+        <span>Nex</span>Cart
+    </div>
+
+</header>
+
+
+
+<main class="success-container">
+
+
+<div class="success-card">
+
+
+    <div class="success-icon">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+    </div>
+
+
+    <h1>
+        Order Placed Successfully!
+    </h1>
+
+
+    <p class="message">
+
+        Thank you for shopping with NexCart.
+        Your order has been confirmed.
+
+    </p>
+
+
+
+    <div class="order-details">
+
+
+        <div class="detail">
+
+            <span>
+                Order ID
+            </span>
+
+            <strong id="orderId">
+                NC123456
+            </strong>
+
+        </div>
+<div class="detail">
+
+    <span id="paymentLabel">
+        Payment Status
+    </span>
+
+    <strong id="paymentStatus" class="paid">
+
+        <i class="fa-solid fa-check"></i>
+        Payment Successful
+
+    </strong>
+
+</div>
+
+
+
+<div class="detail">
+
+    <span id="amountLabel">
+        Amount Paid
+    </span>
+
+    <strong id="amount">
+        ₹0
+    </strong>
+
+</div>
+
+
+<div class="detail" id="codAmountBox" style="display:none;">
+
+    <span>
+        Amount to be Paid on Delivery
+    </span>
+
+    <strong id="codAmount">
+        ₹0
+    </strong>
+
+</div>
+
+
+
+        <div class="detail">
+
+            <span>
+                Delivery
+            </span>
+
+            <strong>
+
+                3-5 Business Days
+
+            </strong>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="delivery-box">
+
+
+        <i class="fa-solid fa-truck-fast"></i>
+
+
+        <div>
+
+            <h3>
+                Expected Delivery
+            </h3>
+
+            <p>
+                Your order will be delivered within 3-5 business days.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="actions">
+
+
+        <button 
+        onclick="viewOrders()"
+        class="primary-btn">
+
+            <i class="fa-solid fa-box"></i>
+            View My Orders
+
+        </button>
+
+
+
+        <button 
+        onclick="continueShopping()"
+        class="secondary-btn">
+
+            Continue Shopping
+
+        </button>
+
+
+    </div>
+
+
+
+</div>
+
+
+</main>
+
+
+
+
+<script>
+
+const latestOrder =
+JSON.parse(localStorage.getItem("lastOrder"));
+
+if(latestOrder){
+
+    document.getElementById("orderId").innerText =
+    "NC" + latestOrder.orderId;
+
+    if(latestOrder.paymentMethod === "cod"){
+        document.getElementById("paymentStatus").innerHTML = `
+    <i class="fa-solid fa-money-bill-wave"></i>
+    To Be Paid on Delivery
+`;
+
+document.getElementById("paymentStatus").classList.remove("paid");
+document.getElementById("paymentStatus").classList.add("pending");
+
+        document.getElementById("amount").innerText = "₹0";
+
+        document.getElementById("amountLabel").innerText =
+        "Amount Paid";
+
+        document.getElementById("codAmountBox").style.display =
+        "flex";
+
+        document.getElementById("codAmount").innerText =
+        "₹" + latestOrder.totalAmount;
+
+    }
+    else{
+        document.getElementById("paymentStatus").innerHTML = `
+    <i class="fa-solid fa-check"></i>
+    Payment Successful
+`;
+
+        document.getElementById("amount").innerText =
+        "₹" + latestOrder.totalAmount;
+
+    }
+
+}
+
+
+function viewOrders(){
+
+    window.location.href="orders.html";
+
+}
+
+
+
+function continueShopping(){
+
+    window.location.href="index.html";
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>

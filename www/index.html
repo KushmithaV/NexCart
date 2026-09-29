@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+@font-face {
+    font-family: "Font Awesome 7 Free";
+    src: url("assets/fontawesome/webfonts/fa-solid-900.woff2") format("woff2");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Font Awesome 7 Free";
+    src: url("assets/fontawesome/webfonts/fa-regular-400.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Font Awesome 7 Brands";
+    src: url("assets/fontawesome/webfonts/fa-brands-400.woff2") format("woff2");
+    font-weight: 400;
+}
+</style>
+<link rel="stylesheet" href="assets/fontawesome/all.min.css">
+
+
+<link rel="stylesheet"
+href="../assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NexCart | Shop Smart. Shop NexCart.</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+<body>
+<!-- ===========================
+        TOP INFO BAR
+============================ -->
+
+<div class="top-bar">
+
+    <div class="container top-container">
+
+        <div class="top-left">
+
+            🚚 Free Shipping Above ₹999
+
+        </div>
+
+        <div class="top-right">
+
+            <span>📞 +91 98765 43210</span>
+
+            <span>|</span>
+
+            <span>support@nexcart.com</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- ==========================
+            NAVBAR
+========================== -->
+
+<nav class="navbar">
+
+    <div class="container nav-container">
+
+        <!-- Logo -->
+
+        <a href="index.html" class="logo">
+
+            <span>Nex</span>Cart
+
+        </a>
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                placeholder="Search Products...">
+
+        </div>
+
+        <!-- Right Side -->
+
+        <div class="nav-right">
+
+            <!-- Wishlist -->
+
+  <a href="#"
+class="nav-icon"
+onclick="openWishlist()">
+
+<i class="fa-regular fa-heart"></i>
+
+</a>
+
+            <!-- Cart -->
+
+      <a href="#"
+class="nav-icon"
+onclick="openCart()">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+</a>
+
+            <!-- Login -->
+<!-- Login Dropdown -->
+
+<div class="login-dropdown">
+
+    <button id="loginBtn" class="login-btn" type="button">
+
+        <span id="loginText">Login</span>
+
+        <i class="fa-solid fa-chevron-down"></i>
+
+    </button>
+
+    <div class="dropdown-content" id="dropdownMenu">
+
+        <!-- Filled by JavaScript -->
+
+    </div>
+
+</div>
+
+</div>
+
+        </div>
+
+</nav>
+
+<!-- ===========================
+            HERO
+============================ -->
+
+<section class="hero">
+
+    <div class="container hero-container">
+
+
+
+        <!-- LEFT -->
+
+        <div class="hero-content">
+
+
+
+            <h1>
+
+                Shop Smart.<br>
+
+                <span>Choose NexCart.</span>
+
+            </h1>
+
+
+
+            <p>
+
+                Discover thousands of premium products from trusted
+                sellers. Experience secure payments, lightning-fast
+                delivery, exclusive deals, and a seamless shopping
+                experience—all in one place.
+
+            </p>
+
+
+
+
+
+        </div>
+    </div>
+
+</section>
+<!-- ==========================
+     SHOP BY CATEGORY
+========================== -->
+
+<section class="categories">
+
+    <div class="container">
+<div class="section-heading">
+
+    <span>FEATURED COLLECTIONS</span>
+
+    <h2>Discover What's Trending</h2>
+
+    <p>
+        Browse our most popular collections featuring quality products
+        from trusted sellers across electronics, fashion, home,
+        beauty, sports, and more.
+    </p>
+
+</div>
+
+
+
+        <div class="category-grid">
+
+<a href="../pages/categories.html?id=1" class="category-card">
+
+<img src="../assets/images/electronics.png">
+
+<h3>Electronics</h3>
+
+</a>
+
+
+
+<a href="../pages/categories.html?id=2" class="category-card">
+<img src="../assets/images/fashion.png">
+<h3>Fashion</h3>
+</a>
+                
+    
+
+
+
+
+               
+<a href="../pages/categories.html?id=3" class="category-card">
+
+ <img src="../assets/images/grocerie.jpg">
+
+                <h3>Groceries</h3>
+
+</a>
+
+
+
+
+
+                
+<a href="../pages/categories.html?id=4" class="category-card">
+
+<img src="../assets/images/furniture.jpg">
+
+                <h3>Furniture</h3>
+
+</a>
+
+                
+
+                
+<a href="../pages/categories.html?id=5" class="category-card">
+
+<img src="../assets/images/beauty.jpg">
+
+                <h3>Beauty</h3>
+
+</a>
+
+
+
+<a href="../pages/categories.html?id=6" class="category-card">
+
+
+                <img src="../assets/images/sports.jpg">
+
+                <h3>Sports</h3>
+
+</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==================================
+        FEATURED PRODUCTS
+=================================== -->
+
+
+
+
+
+<!-- ==================================
+            FLASH SALE
+=================================== -->
+
+<section class="flash-sale">
+
+    <div class="container flash-container">
+
+        <div class="flash-content">
+
+    
+
+            <h2>
+
+                Summer Mega Sale
+
+            </h2>
+
+            <p>
+
+                Save up to <strong>70% OFF</strong> on selected products.
+                Don't miss our biggest sale of the season.
+
+            </p>
+
+            <div class="countdown">
+
+                <div class="time-box">
+
+                    <h3 id="days">00</h3>
+
+                    <span>Days</span>
+
+                </div>
+
+                <div class="time-box">
+
+                    <h3 id="hours">00</h3>
+
+                    <span>Hours</span>
+
+                </div>
+
+                <div class="time-box">
+
+                    <h3 id="minutes">00</h3>
+
+                    <span>Minutes</span>
+
+                </div>
+
+                <div class="time-box">
+
+                    <h3 id="seconds">00</h3>
+
+                    <span>Seconds</span>
+
+                </div>
+
+            </div>
+
+            <a href="#" class="flash-btn">
+
+                Shop Now
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==================================
+        TRUSTED BRANDS
+=================================== -->
+
+
+<!-- ==========================================
+            BECOME A SELLER
+=========================================== -->
+
+<section class="seller-section">
+
+    <div class="container seller-container">
+
+        <div class="seller-left">
+
+            <span>SELL ON NEXCART</span>
+
+            <h2>
+                Grow Your Business<br>
+                With Millions of Customers
+            </h2>
+
+            <p>
+
+                Join our growing marketplace and reach customers across
+                the country. Manage your products, track orders, and
+                grow your business with powerful seller tools.
+
+            </p>
+
+            <div class="seller-features">
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Zero Listing Fees
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Secure Payments
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Seller Dashboard
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Order Management
+
+                </div>
+
+            </div>
+
+            <div class="seller-buttons">
+
+                <a href="seller-register.html" class="primary-btn">
+
+                    Become a Seller
+
+                </a>
+
+           
+
+            </div>
+
+        </div>
+
+
+
+        <div class="seller-right">
+
+            <img src="../assets/images/seller.png"
+                 alt="Become Seller">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================
+        WHY SHOP WITH NEXCART
+=================================== -->
+
+<section class="why-us">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>WHY NEXCART</span>
+
+            <h2>Shopping Made Simple & Secure</h2>
+
+            <p>
+
+                We're committed to delivering a seamless shopping experience
+                with trusted sellers, secure payments, and customer-first service.
+
+            </p>
+
+        </div>
+
+        <div class="why-grid">
+
+            <!-- Card 1 -->
+
+            <div class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-truck-fast"></i>
+
+                </div>
+
+                <h3>Fast Delivery</h3>
+
+                <p>
+
+                    Get your orders delivered quickly with our trusted delivery partners.
+
+                </p>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                </div>
+
+                <h3>Secure Payments</h3>
+
+                <p>
+
+                    Every transaction is protected with industry-standard security.
+
+                </p>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-rotate-left"></i>
+
+                </div>
+
+                <h3>Easy Refunds</h3>
+
+                <p>
+
+                    Hassle-free refund process with our customer-friendly refund policy.
+
+                </p>
+
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="why-card">
+
+                <div class="why-icon">
+
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+                <h3>Trusted Quality</h3>
+
+                <p>
+
+                    Every product is offered by verified sellers focused on quality.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================
+                    FOOTER
+=========================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- Company -->
+
+            <div class="footer-column">
+
+                <h2 class="footer-logo">
+
+                    Nex<span>Cart</span>
+
+                </h2>
+
+                <p>
+
+                    Shop smarter with NexCart. Discover quality products,
+                    trusted sellers, secure payments and a seamless shopping
+                    experience all in one place.
+
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="#">Home</a></li>
+
+                    <li><a href="#">Shop</a></li>
+
+                    <li><a href="categories.html">Categories</a></li>
+
+                    <li><a href="#">Deals</a></li>
+
+                    <li><a href="seller-register.html">Become Seller</a></li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- Customer -->
+
+            <div class="footer-column">
+
+                <h3>Customer Support</h3>
+
+                <ul>
+
+                    <li><a href="#">My Account</a></li>
+
+                    <li><a href="#">Track Order</a></li>
+
+                    <li><a href="#">Wishlist</a></li>
+
+                    <li><a href="#">Returns</a></li>
+
+                    <li><a href="#">Help Center</a></li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- Contact -->
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <ul>
+
+                    <li>
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Bangalore, Karnataka
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        +91 98765 43210
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        support@nexcart.com
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Newsletter -->
+
+        <div class="footer-newsletter">
+
+            <h2>
+
+                Stay Updated
+
+            </h2>
+
+            <p>
+
+                Subscribe to receive exclusive offers and latest arrivals.
+
+            </p>
+
+            <form>
+
+                <input type="email"
+                       placeholder="Enter your email">
+
+                <button>
+
+                    Subscribe
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+
+        <!-- Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 NexCart. All Rights Reserved.
+
+            </p>
+
+            <div class="payment-icons">
+
+                <i class="fa-brands fa-cc-visa"></i>
+
+                <i class="fa-brands fa-cc-mastercard"></i>
+
+                <i class="fa-brands fa-cc-paypal"></i>
+
+                <i class="fa-brands fa-google-pay"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+<script src="../assets/js/products.js"></script>
+
+
+<div id="toast" class="toast">
+
+    <i id="toastIcon" class="fa-solid fa-circle-check"></i>
+
+    <span id="toastMessage">Success</span>
+
+</div>
+<script src="../assets/js/navbar.js"></script>
+
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

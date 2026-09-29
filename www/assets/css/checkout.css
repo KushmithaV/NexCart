@@ -1,0 +1,1768 @@
+/* ==========================================
+        NEXCART CHECKOUT PAGE
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+body{
+
+    background:#f6f6f6;
+    color:#222;
+
+}
+
+
+/* ==========================================
+        HEADER
+========================================== */
+
+
+.checkout-header{
+
+    background:#111;
+
+    padding:18px 70px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+
+.logo{
+
+    font-size:32px;
+
+    font-weight:800;
+
+    color:white;
+
+}
+
+
+.logo span{
+
+    color:#ff7300;
+
+}
+
+
+.back-btn{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    display:flex;
+
+    gap:8px;
+
+    align-items:center;
+
+    transition:.3s;
+
+}
+
+
+.back-btn:hover{
+
+    color:#ff7300;
+
+}
+
+
+
+/* ==========================================
+        CHECKOUT STEPS
+========================================== */
+
+
+.checkout-progress{
+
+    width:85%;
+
+    margin:30px auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:50px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#777;
+
+}
+
+
+.checkout-progress span.active{
+
+    color:#ff7300;
+
+}
+
+
+
+
+/* ==========================================
+        MAIN LAYOUT
+========================================== */
+
+
+.checkout-container{
+
+
+    width:85%;
+
+    max-width:1400px;
+
+    margin:35px auto;
+
+
+    display:grid;
+
+    grid-template-columns:1.35fr .75fr;
+
+    gap:35px;
+
+
+    align-items:start;
+
+
+}
+
+
+
+.checkout-right{
+
+    position:sticky;
+
+    top:20px;
+
+}
+
+
+
+/* ==========================================
+        CARD
+========================================== */
+
+
+.card{
+
+    background:white;
+
+    padding:28px;
+
+    border-radius:18px;
+
+    margin-bottom:25px;
+
+    box-shadow:
+
+    0 8px 25px rgba(0,0,0,.07);
+
+}
+
+
+
+.card h2{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:22px;
+
+    margin-bottom:25px;
+
+}
+
+
+.card h2 i{
+
+    color:#ff7300;
+
+}
+
+
+
+/* ==========================================
+        ADDRESS FORM
+========================================== */
+
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+
+}
+
+
+
+.form-grid input,
+.form-grid textarea{
+
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.3s;
+
+
+}
+
+
+
+.form-grid textarea{
+
+    grid-column:span 2;
+
+    resize:none;
+
+}
+
+
+
+.form-grid input:focus,
+.form-grid textarea:focus{
+
+    border-color:#ff7300;
+
+    box-shadow:0 0 0 3px rgba(255,115,0,.12);
+
+}
+
+
+
+
+/* ==========================================
+        DELIVERY / PAYMENT OPTIONS
+========================================== */
+
+
+.option{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:18px;
+
+    border:1px solid #ddd;
+
+    border-radius:14px;
+
+    margin-bottom:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+
+}
+
+
+
+.option:hover{
+
+    border-color:#ff7300;
+
+    background:#fff8f2;
+
+}
+
+
+
+.option input{
+
+    accent-color:#ff7300;
+
+}
+
+
+
+.option h4{
+
+    margin-bottom:5px;
+
+    font-size:16px;
+
+}
+
+
+
+.option p{
+
+    color:#777;
+
+    font-size:14px;
+
+}
+
+
+
+.cod-charge{
+
+    color:#ff7300;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+
+
+/* ==========================================
+        PAYMENT BOX
+========================================== */
+
+
+.payment-box{
+
+    display:none;
+
+    padding:20px;
+
+    background:#fff7ef;
+
+    border:1px solid #ff7300;
+
+    border-radius:15px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.payment-box h3{
+
+    margin-bottom:15px;
+
+}
+
+
+
+.payment-box input,
+.payment-box select{
+
+
+    width:100%;
+
+    padding:13px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.upi-apps{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.upi-app{
+
+    flex:1;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#111;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+
+.upi-app:hover{
+
+    background:#ff7300;
+
+}
+
+
+
+.verify-btn{
+
+    width:100%;
+
+    padding:13px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#ff7300;
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+
+
+.card-row{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+
+
+/* ==========================================
+        ORDER SUMMARY
+========================================== */
+
+
+.checkout-product{
+
+
+    display:flex;
+
+    gap:15px;
+
+    padding:15px;
+
+    background:#fafafa;
+
+    border-radius:14px;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.checkout-product img{
+
+
+    width:120px;
+
+    height:120px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+
+}
+
+
+
+.product-info h4{
+
+
+    font-size:16px;
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+.product-info p{
+
+
+    color:#ff7300;
+
+    font-weight:700;
+
+
+}
+
+
+
+.product-info span{
+
+
+    color:#777;
+
+    font-size:14px;
+
+
+}
+
+
+
+
+.summary-row{
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:18px 0;
+
+    font-size:16px;
+
+
+}
+
+
+
+.summary-row.total{
+
+
+    font-size:24px;
+
+    font-weight:800;
+
+    color:#ff7300;
+
+
+}
+
+
+
+
+/* ==========================================
+        COUPON
+========================================== */
+
+
+.coupon{
+
+    display:flex;
+
+    gap:10px;
+
+    margin:25px 0;
+
+}
+
+
+
+.coupon input{
+
+
+    flex:1;
+
+    padding:13px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+
+}
+
+
+
+.coupon button{
+
+
+    padding:13px 22px;
+
+    background:#111;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+
+}
+
+
+
+.coupon button:hover{
+
+    background:#ff7300;
+
+}
+
+
+
+/* ==========================================
+        PLACE ORDER
+========================================== */
+
+
+.place-order-btn{
+
+
+    width:100%;
+
+    padding:17px;
+
+    background:#ff7300;
+
+    color:white;
+
+    border:none;
+
+    border-radius:14px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+
+}
+
+
+
+.place-order-btn:disabled{
+
+
+    background:#999;
+
+    cursor:not-allowed;
+
+
+}
+
+
+
+
+/* ==========================================
+        REFUND NOTE
+========================================== */
+
+
+.refund-note{
+
+
+    margin-top:20px;
+
+    padding:15px;
+
+    display:flex;
+
+    gap:12px;
+
+    background:#fff4e8;
+
+    border-radius:12px;
+
+    color:#555;
+
+    font-size:14px;
+
+
+}
+
+
+.refund-note i{
+
+    color:#ff7300;
+
+}
+
+
+
+/* ==========================================
+        FEATURES
+========================================== */
+
+
+.features{
+
+    margin-top:25px;
+
+}
+
+
+
+.features div{
+
+    display:flex;
+
+    gap:10px;
+
+    margin:14px 0;
+
+    color:#555;
+
+}
+
+
+
+.features i{
+
+    color:#ff7300;
+
+}
+
+
+
+/* ==========================================
+        SUCCESS POPUP
+========================================== */
+
+
+.success-popup{
+
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.5);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+}
+
+
+
+.popup-content{
+
+
+    background:white;
+
+    padding:40px;
+
+    width:400px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+
+}
+
+
+
+.popup-content i{
+
+
+    font-size:70px;
+
+    color:#27ae60;
+
+}
+
+
+
+.popup-content button{
+
+
+    margin-top:25px;
+
+    padding:14px 30px;
+
+    background:#ff7300;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+}
+
+
+
+/* ==========================================
+        RESPONSIVE
+========================================== */
+
+
+@media(max-width:1000px){
+
+
+.checkout-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.checkout-right{
+
+    position:relative;
+
+}
+
+
+.form-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.form-grid textarea{
+
+    grid-column:auto;
+
+}
+
+
+}
+
+
+@media(max-width:600px){
+
+
+.checkout-header{
+
+    padding:18px 20px;
+
+}
+
+
+.checkout-container{
+
+    width:95%;
+
+}
+
+
+.checkout-progress{
+
+    gap:15px;
+
+    font-size:12px;
+
+}
+
+
+
+}
+/* ==========================================
+        SHIPPING BUTTONS
+========================================== */
+
+.shipping-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:12px;
+
+    margin-top:18px;
+
+}
+
+.edit-btn,
+.save-btn{
+
+    padding:10px 24px;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+.edit-btn{
+
+    background:#ff7a00;
+
+    color:#fff;
+
+}
+
+.edit-btn:hover{
+
+    background:#e56d00;
+
+}
+
+.save-btn{
+
+    background:#111;
+
+    color:#fff;
+
+}
+
+.save-btn:hover{
+
+    background:#333;
+
+}
+/* ==========================================
+   RESPONSIVE - TABLET
+========================================== */
+
+@media screen and (max-width: 1000px) {
+
+    .checkout-header {
+        padding: 18px 30px;
+    }
+
+    .checkout-container {
+        width: 92%;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .checkout-right {
+        position: relative;
+        top: auto;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-grid textarea {
+        grid-column: span 2;
+    }
+
+    .checkout-progress {
+        width: 90%;
+        gap: 30px;
+    }
+}
+
+
+/* ==========================================
+   RESPONSIVE - MOBILE
+========================================== */
+
+@media screen and (max-width: 600px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* ======================================
+       HEADER
+    ====================================== */
+
+    .checkout-header {
+        width: 100%;
+        box-sizing: border-box;
+
+        padding: 14px 16px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 24px;
+        white-space: nowrap;
+    }
+
+    .back-btn {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+
+    /* ======================================
+       CHECKOUT PROGRESS
+    ====================================== */
+
+    .checkout-progress {
+        width: 100%;
+        box-sizing: border-box;
+
+        margin: 20px 0;
+
+        padding: 0 15px;
+
+        display: flex;
+        justify-content: space-between;
+
+        gap: 8px;
+
+        font-size: 11px;
+
+        overflow: hidden;
+    }
+
+    .checkout-progress span {
+        white-space: nowrap;
+        text-align: center;
+    }
+
+
+    /* ======================================
+       MAIN CONTAINER
+    ====================================== */
+
+    .checkout-container {
+        width: 100% !important;
+        max-width: none;
+
+        box-sizing: border-box;
+
+        margin: 20px 0 35px;
+
+        padding: 0 12px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+
+    /* ======================================
+       CARDS
+    ====================================== */
+
+    .card {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 20px 16px;
+
+        margin-bottom: 0;
+
+        border-radius: 15px;
+    }
+
+    .card h2 {
+        font-size: 19px;
+
+        gap: 9px;
+
+        margin-bottom: 20px;
+    }
+
+
+    /* ======================================
+       ADDRESS FORM
+    ====================================== */
+
+    .form-grid {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 13px;
+    }
+
+    .form-grid input,
+    .form-grid textarea {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 13px;
+
+        font-size: 14px;
+
+        border-radius: 10px;
+    }
+
+    .form-grid textarea {
+        grid-column: auto;
+
+        min-height: 100px;
+    }
+
+
+    /* ======================================
+       SHIPPING / PAYMENT OPTIONS
+    ====================================== */
+
+    .option {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 14px;
+
+        gap: 11px;
+
+        border-radius: 12px;
+    }
+
+    .option h4 {
+        font-size: 14px;
+    }
+
+    .option p {
+        font-size: 12px;
+
+        line-height: 1.4;
+    }
+
+    .cod-charge {
+        font-size: 11px;
+    }
+
+
+    /* ======================================
+       PAYMENT BOX
+    ====================================== */
+
+    .payment-box {
+        padding: 15px;
+
+        border-radius: 12px;
+    }
+
+    .payment-box input,
+    .payment-box select {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 12px;
+
+        font-size: 13px;
+    }
+
+    .upi-apps {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 8px;
+    }
+
+    .upi-app {
+        padding: 11px;
+
+        font-size: 12px;
+    }
+
+    .card-row {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 8px;
+    }
+
+
+    /* ======================================
+       SHIPPING BUTTONS
+    ====================================== */
+
+    .shipping-actions {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: stretch;
+
+        gap: 10px;
+
+        margin-top: 15px;
+    }
+
+    .edit-btn,
+    .save-btn {
+        flex: 1;
+
+        padding: 11px 15px;
+
+        font-size: 14px;
+    }
+
+
+    /* ======================================
+       CHECKOUT PRODUCT
+    ====================================== */
+
+    .checkout-product {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 12px;
+
+        padding: 12px;
+
+        margin-bottom: 12px;
+
+        border-radius: 12px;
+    }
+
+    .checkout-product img {
+        width: 80px;
+        height: 80px;
+
+        min-width: 80px;
+
+        object-fit: contain;
+
+        border-radius: 10px;
+    }
+
+    .product-info {
+        min-width: 0;
+
+        flex: 1;
+    }
+
+    .product-info h4 {
+        font-size: 14px;
+
+        line-height: 1.35;
+
+        margin-bottom: 5px;
+
+        overflow: hidden;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .product-info p {
+        font-size: 15px;
+    }
+
+    .product-info span {
+        font-size: 12px;
+    }
+
+
+    /* ======================================
+       SUMMARY
+    ====================================== */
+
+    .summary-row {
+        margin: 14px 0;
+
+        font-size: 14px;
+    }
+
+    .summary-row.total {
+        font-size: 20px;
+
+        margin-top: 18px;
+    }
+
+
+    /* ======================================
+       COUPON
+    ====================================== */
+
+    .coupon {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        display: flex;
+
+        gap: 8px;
+
+        margin: 20px 0;
+    }
+
+    .coupon input {
+        min-width: 0;
+
+        flex: 1;
+
+        box-sizing: border-box;
+
+        padding: 12px;
+
+        font-size: 13px;
+    }
+
+    .coupon button {
+        flex-shrink: 0;
+
+        padding: 12px 15px;
+
+        font-size: 13px;
+    }
+
+
+    /* ======================================
+       PLACE ORDER
+    ====================================== */
+
+    .place-order-btn {
+        width: 100%;
+
+        padding: 15px;
+
+        font-size: 16px;
+
+        border-radius: 12px;
+    }
+
+
+    /* ======================================
+       REFUND NOTE
+    ====================================== */
+
+    .refund-note {
+        padding: 12px;
+
+        gap: 9px;
+
+        font-size: 12px;
+
+        line-height: 1.5;
+    }
+
+
+    /* ======================================
+       FEATURES
+    ====================================== */
+
+    .features {
+        margin-top: 20px;
+    }
+
+    .features div {
+        gap: 8px;
+
+        margin: 11px 0;
+
+        font-size: 13px;
+
+        line-height: 1.4;
+    }
+
+
+    /* ======================================
+       SUCCESS POPUP
+    ====================================== */
+
+    .success-popup {
+        padding: 15px;
+
+        box-sizing: border-box;
+    }
+
+    .popup-content {
+        width: 100%;
+
+        max-width: 360px;
+
+        box-sizing: border-box;
+
+        padding: 30px 20px;
+
+        border-radius: 16px;
+    }
+
+    .popup-content i {
+        font-size: 55px;
+    }
+
+    .popup-content button {
+        width: 100%;
+
+        padding: 13px 20px;
+    }
+}
+
+
+/* ==========================================
+   VERY SMALL PHONES
+========================================== */
+
+@media screen and (max-width: 400px) {
+
+    .checkout-header {
+        padding: 13px 12px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .back-btn {
+        font-size: 11px;
+    }
+
+    .checkout-progress {
+        font-size: 10px;
+        gap: 5px;
+        padding: 0 10px;
+    }
+
+    .checkout-container {
+        padding: 0 10px;
+    }
+
+    .card {
+        padding: 18px 14px;
+    }
+
+    .card h2 {
+        font-size: 17px;
+    }
+
+    .checkout-product img {
+        width: 70px;
+        height: 70px;
+        min-width: 70px;
+    }
+
+    .product-info h4 {
+        font-size: 13px;
+    }
+
+    .product-info p {
+        font-size: 14px;
+    }
+
+    .coupon button {
+        padding: 11px 12px;
+    }
+
+    .edit-btn,
+    .save-btn {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
+/* ==========================================
+   CHECKOUT MOBILE FIX
+========================================== */
+
+@media screen and (max-width: 600px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* HEADER */
+    .checkout-header {
+        width: 100%;
+        height: auto;
+        min-height: 65px;
+        padding: 15px 18px;
+        box-sizing: border-box;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .back-btn {
+        font-size: 13px;
+    }
+
+
+    /* PROGRESS */
+    .checkout-progress {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 15px;
+        margin: 20px auto;
+
+        gap: 10px;
+        font-size: 11px;
+
+        justify-content: space-between;
+        text-align: center;
+    }
+
+
+    /* MAIN CHECKOUT */
+    .checkout-container {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+        padding: 10px 12px 30px;
+
+        box-sizing: border-box;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 18px;
+    }
+
+
+    /* LEFT + RIGHT */
+    .checkout-left,
+    .checkout-right {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .checkout-right {
+        position: static !important;
+    }
+
+
+    /* CARDS */
+    .card {
+        width: 100%;
+        box-sizing: border-box;
+
+        padding: 20px 16px;
+        border-radius: 15px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .card h2 {
+        font-size: 19px;
+        margin-bottom: 18px;
+    }
+
+
+    /* ADDRESS */
+    .form-grid {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 12px;
+    }
+
+    .form-grid input,
+    .form-grid textarea {
+        width: 100%;
+        box-sizing: border-box;
+
+        padding: 13px;
+        font-size: 14px;
+    }
+
+    .form-grid textarea {
+        grid-column: auto !important;
+    }
+
+
+    /* SHIPPING / PAYMENT OPTIONS */
+    .option {
+        padding: 14px;
+        gap: 10px;
+    }
+
+    .option h4 {
+        font-size: 14px;
+    }
+
+    .option p {
+        font-size: 12px;
+    }
+
+
+    /* ORDER SUMMARY PRODUCT */
+    .checkout-product {
+        width: 100%;
+        box-sizing: border-box;
+
+        display: flex;
+        gap: 12px;
+
+        padding: 12px;
+    }
+
+    .checkout-product img {
+        width: 85px;
+        height: 85px;
+
+        min-width: 85px;
+
+        object-fit: contain;
+    }
+
+    .product-info {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .product-info h4 {
+        font-size: 15px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .product-info p {
+        font-size: 17px;
+    }
+
+    .product-info span {
+        font-size: 13px;
+    }
+
+
+    /* SUMMARY ROWS */
+    .summary-row {
+        font-size: 14px;
+        margin: 14px 0;
+    }
+
+    .summary-row.total {
+        font-size: 21px;
+    }
+
+
+    /* COUPON */
+    .coupon {
+        width: 100%;
+        box-sizing: border-box;
+
+        display: flex;
+        gap: 8px;
+    }
+
+    .coupon input {
+        min-width: 0;
+        width: 100%;
+
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    .coupon button {
+        padding: 12px 18px;
+        flex-shrink: 0;
+    }
+
+
+    /* PLACE ORDER */
+    .place-order-btn {
+        width: 100%;
+        box-sizing: border-box;
+
+        padding: 15px;
+        font-size: 16px;
+    }
+
+
+    /* REFUND NOTE */
+    .refund-note {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+
+    /* FEATURES */
+    .features div {
+        font-size: 13px;
+    }
+
+
+    /* PAYMENT BOX */
+    .payment-box {
+        padding: 15px;
+    }
+
+    .upi-apps {
+        flex-wrap: wrap;
+    }
+
+    .upi-app {
+        min-width: 0;
+    }
+
+
+    /* SHIPPING BUTTONS */
+    .shipping-actions {
+        justify-content: stretch;
+        flex-direction: row;
+    }
+
+    .edit-btn,
+    .save-btn {
+        flex: 1;
+        padding: 10px;
+    }
+
+
+    /* SUCCESS POPUP */
+    .popup-content {
+        width: calc(100% - 30px);
+        box-sizing: border-box;
+
+        padding: 28px 20px;
+    }
+}
